@@ -30,7 +30,8 @@ Name = f5-asm-alert-1
     """Host:\s{0,100}({domain}[^"]{1,2000}?)((\\r\\n|\s{1,100})[\w\-]{1,2000}:|")""",
     """User-Agent:\s{0,100}({user_agent}[^"]{1,2000}?)\s{0,100}(\\r\\n[\w\-]{1,2000}:|")""",
     """geo_location="(N\/A|({country}[^"]{1,2000}))"""",
-    """ip_address_intelligence="(N\/A|({ip_reputation}[^"]{1,2000}))""""
+    """ip_address_intelligence="(N\/A|({ip_reputation}[^"]{1,2000}))"""",
+    """request_status="({action}[^"]{1,200})""""
   ]
 
 

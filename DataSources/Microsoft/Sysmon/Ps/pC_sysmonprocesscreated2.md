@@ -15,7 +15,7 @@ sysmon-process-events = {
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Fields = [ 
     """UtcTime:\s{0,100}({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """exabeam_host=(gcs-topic|({host}[\w.\-]{1,2000}))""",
     """\sComputer="({host}[\w\-.]{1,2000})"""",
     """User=({user}.+?)\s{1,100}(\w+=|$)""",
     """Domain=({domain}.+?)\s{1,100}(\w+=|$)""",

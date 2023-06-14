@@ -16,7 +16,7 @@ d-xml-windows-device = {
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
   Fields = [
-    """exabeam_host=({host}[\w\-.]{1,2000})""",
+    """exabeam_host=(gcs-topic|cc|({host}[\w\-.]{1,2000}))""",
     """<TimeCreated SystemTime=\'({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{9}Z)\'\/>"""
     """<Computer>({dest_host}[^<>"']{1,2000}?)<\/Computer>"""
     """Security ID:\s{1,100}({user_sid}[^\s]{1,2000}?)\s{1,100}Account Name:"""

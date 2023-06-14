@@ -7,6 +7,7 @@ Name = cc-pulsesecure-account-deleted
   Fields = ${JuniperParserTemplates.cef-pulsesecure-vpn-events.Fields} [
     """Removed username (({target_domain}[^\\\.]{1,2000})\\)?({target_user}[^\\\s]{1,2000})"""
   ]
+  DupFields = ["target_user->account_name"]
 
 cef-pulsesecure-vpn-events = {
   Vendor = Juniper Networks

@@ -17,7 +17,7 @@ Name = unix-as
     """\w+\s\d{1,100}\s\d\d:\d\d:\d\d(\.\S+)?\s({src_ip}\d{1,100}\.\d{1,100}\.\d{1,100}\.\d{1,100})"""
     """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """\w+\s{1,100}\d{1,100} \d\d:\d\d:\d\d(\.\S+)? ({host}({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.\-]{1,2000}))\s{1,100}.+?:\s{0,100}pam_unix""",
-    """session opened for user ({account}.+?) by""",
+    """session opened for user ({account}[^\s\(]{1,2000})(\([^\)]{1,2000}\))? by""",
     """\(uid=({user_uid}\d{1,100})\)""",
     """session opened for user \S+ by ({user}[^\("=,]{1,2000})""",
   ]

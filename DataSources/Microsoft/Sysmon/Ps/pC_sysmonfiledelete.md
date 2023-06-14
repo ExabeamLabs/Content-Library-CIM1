@@ -9,7 +9,7 @@ Name = sysmon-file-delete
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Conditions = [ """File Delete:""", """IMPHASH=""", """User:""" ]
   Fields = [
-    """exabeam_host=([^=@]{1,2000}@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=@]{1,2000}@\s{0,100})?(gcs-topic|({host}\S+))""",
     """({event_name}File Delete)""",
     """\s({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d.\d\d\d)\s""",
     """ProcessGuid:\s\{({process_guid}[^\}]{1,2000})\}""",

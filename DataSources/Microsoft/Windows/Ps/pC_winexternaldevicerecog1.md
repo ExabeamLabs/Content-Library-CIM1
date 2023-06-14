@@ -9,7 +9,7 @@ Name = win-external-device-recog-1
   DataType = "usb-insert"
   Conditions = [ """EventCode=6416""", """A new external device was recognized by the system.""", """ComputerName =""" ]
   Fields = [
-    """exabeam_host=({host}[\w\-.]{1,2000})""",
+    """exabeam_host=(gcs-topic|cc|({host}[\w\-.]{1,2000}))""",
     """({time}(\d{2}\/){2}\d{4} (\d{2}:){2}\d{2} (?:am|AM|pm|PM))""",
     """ComputerName =\s{0,100}({dest_host}[^=]{1,2000}?)\s{1,100}TaskCategory=""",
     """Account Name:\s{0,100}(-\s{0,100}|({user}[^:]{1,2000}?)\s{1,100})Account Domain:""",

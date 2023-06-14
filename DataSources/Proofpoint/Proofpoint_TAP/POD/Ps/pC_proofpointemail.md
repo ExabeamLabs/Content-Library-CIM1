@@ -22,6 +22,7 @@ Name = proofpoint-email
       """"routeDirection"{1,20}:\s{0,100}"{1,20}({direction}[^"]{1,2000})""",
       """"message-id"{1,20}:\s{0,100}\["{1,20}<{0,100}({message_id}[^>"]{1,2000})""",
       """msgParts":[^\]]{1,2000}"detectedName"{1,20}:\s{0,100}"{1,20}\s{0,100}({attachment}[^"]{1,2000})""",
+      """"detectedName":"({attachment_1}[^"]{1,2000})"(.{1,2000}?detectedName":"({attachment_2}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_3}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_4}[^"]{1,2000})?")?(.{1,2000}?detectedName":"({attachment_5}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_6}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_7}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_8}[^"]{1,2000})")?"""
       """msgParts":[^\]]{1,2000}"sizeDecodedBytes":\s{0,99}({bytes}\d{1,100})""",
       """"ip"{1,20}:\s{0,100}"{1,20}({src_ip}[A-Fa-f:\d.]{1,2000})""",
       """"x-originating-ip"{1,20}:\s{0,100}\["{1,20}\[({src_ip}[^"\]]{1,2000})""",
@@ -32,7 +33,6 @@ Name = proofpoint-email
       """"msgParts":\[\{[^\n]{0,2000}"md5":"({md5}[^"]{1,2000})"[^\n]{0,2000}\],""",
       """"msgParts":\[\{[^\n]{0,2000}"sha256":"({sha256}[^"]{1,2000})"[^\n]{0,2000}(\],|\}\])"""
     ]
-    DupFields = [ "attachment->attachments" ]
   SOAR {
     IncidentType = "dlp"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "recipient->dlpUser", "sender->emailFrom", "subject->emailSubject", "recipients->emailTo", "outcome->dlpActionTaken","host->dlpDeviceName"]

@@ -11,7 +11,7 @@ Name = sysmon-windows-dns-query
   Conditions = [ """QueryName:""", """QueryResults:""", """ProcessGuid:""", """Image:""" ]
   Fields = [
     """UtcTime:\s{0,100}({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d\.\d\d\d)\s""",
-    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """exabeam_host=(gcs-topic|({host}[\w.\-]{1,2000}))""",
     """QueryName:\s{0,100}({query}[^\s]{1,2000})""",
     """ProcessGuid:\s{0,100}\{({process_guid}[A-F0-9a-f-]{1,2000})\}""",
     """ProcessId:\s{0,100}({pid}\d{1,100})""",

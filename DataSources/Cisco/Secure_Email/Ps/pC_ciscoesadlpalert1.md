@@ -20,7 +20,9 @@ Name = cisco-esa-dlp-alert-1
     """\|Cisco\|([^\|]{0,2000}\|){3}({alert_name}[^\|]{1,2000})""",
     """\|Cisco\|([^\|]{0,2000}\|){4}({alert_severity}[^\|]{1,2000})"""
     """deviceDirection=({direction}\d)""",
-    """\Wact=({action}[^=]{1,2000}?)\s{0,100}\w+="""
+    """\Wact=({action}[^=]{1,2000}?)\s{0,100}\w+=""",
+    """msg='({subject}[^~]{1,2000}?)'\s\w+?=""",
+    """ESAAttachmentDetails=\{'({attachment}[^']{1,2000}?)'"""
   ]
   DupFields = [ "sender->user_email", "action->outcome" ]
 

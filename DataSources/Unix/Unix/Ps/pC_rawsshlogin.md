@@ -13,7 +13,8 @@ Name = raw-ssh-login
     """exabeam_host=(gcs-topic|([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))))""",
     """\s({host}({dest_host}[\w\-\.]{1,2000}))\s({additional_info}Accepted[^:]{1,2000}?)\s{0,100}ssh2""",
     """"host":"(::ffff:)?({dest_host}({host}[^"]{1,2000}))""""
-    """"host":\{"name":"(::ffff:)?({dest_host}({host}[^"]{1,2000}))""""
+    """"host":\{"name":"(::ffff:)?({dest_host}({host}[^"]{1,2000}))"""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[\+\-][^\s]{1,2000})""",
     """<({time}\d\d\d\d\s{1,100}\w{3}\s{1,100}\d\d\s{1,100}\d\d:\d\d:\d\d)\s""",
     """\d\d:\d\d:\d\d \d\d\d\d (::ffff:)?({host}({dest_host}[^\s]{1,2000}))""",
     """\s(::ffff:)?({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\.-]{1,2000})):?\s{1,100}sshd\[""",

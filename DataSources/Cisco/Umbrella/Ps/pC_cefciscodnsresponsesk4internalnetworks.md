@@ -3,6 +3,9 @@
 {
 Name = cef-cisco-dns-response-sk4-internal-networks
   Conditions = ["""destinationServiceName =Cisco Umbrella""", """"queryType":"""", """"responseCode":"""", """"mostGranularIdentityType":"Internal Networks""""]
+  Fields=${CiscoParsersTemplates.cef-cisco-dns-response-sk4-src-template.Fields}[
+    """"identities":\[[^\]]{0,2000}?"({host}[\w\-\.]{1,2000})""""
+  ]
 
 cef-cisco-dns-response-sk4-src-template {
   Vendor = Cisco

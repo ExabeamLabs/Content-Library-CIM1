@@ -4,6 +4,7 @@
 Name = cef-cisco-dns-response-sk4-roaming-client
   Conditions = ["""destinationServiceName =Cisco Umbrella""", """"queryType":"""", """"responseCode":"""", """"mostGranularIdentityType":"Anyconnect Roaming Client"""" ]
   Fields=${CiscoParsersTemplates.cef-cisco-dns-response-sk4-src-template.Fields}[
+    """"identities":\[[^\]]{0,2000}?"({host}[\w\-\.]{1,2000})""""
     """"mostGranularIdentity":"({src_host}[^"]{1,2000})"""",
   ]
 

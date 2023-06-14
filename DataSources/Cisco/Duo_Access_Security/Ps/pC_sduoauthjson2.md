@@ -22,6 +22,9 @@ Name = s-duo-auth-json-2
     """"email":"({user_email}[^@"]{1,2000}@[^"]{1,2000})"""",
     """"factor":"(?:n\/a|({auth_method}[^"]{1,2000}))"""",
     """"user":[^\}]{1,2000}?"name":"({user}[^"]{1,2000})""""
+    """"new_enrollment"\s{0,100}:\s{0,100}({new_enrollment}true|false)""",
+    """"application".{1,2000}?"name":\s{0,100}"({service_name}[^"]{1,2000})"""
+    """"location":.{1,2000}?"country":\s{0,100}"({src_country}[^"]{1,2000})"""
   ]
 
 

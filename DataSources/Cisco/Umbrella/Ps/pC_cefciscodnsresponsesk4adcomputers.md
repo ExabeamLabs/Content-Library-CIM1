@@ -4,6 +4,7 @@
 Name = cef-cisco-dns-response-sk4-ad-computers
   Conditions = ["""destinationServiceName =Cisco Umbrella""", """"queryType":"""", """"responseCode":"""", """"mostGranularIdentityType":"AD Computers""""]
   Fields=${CiscoParsersTemplates.cef-cisco-dns-response-sk4-src-template.Fields}[
+    """"identities":\[[^\]]{0,2000}?"({host}[\w\-\.]{1,2000})""""
     """"mostGranularIdentity":"({src_host}[^"]{1,2000})"""",
   ]
 

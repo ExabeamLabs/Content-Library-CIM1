@@ -10,7 +10,7 @@ Name = json-sysmon-file-create-1
   Conditions = [ """File creation time changed:""", """Microsoft-Windows-Sysmon""", """EventID":2""" ]
   Fields = [
     """"EventTime":"({time}\d{1,100}-\d{1,100}-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
-    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """exabeam_host=(gcs-topic|({host}[\w.\-]{1,2000}))""",
     """"Hostname":"{1,20}({host}[^"]{1,2000})""",
     """"EventID":({event_code}2)""",
     """({event_name}File creation time changed)""",

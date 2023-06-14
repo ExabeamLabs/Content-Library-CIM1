@@ -21,6 +21,7 @@ Name = proofpoint-email-6
     """"routeDirection"{1,20}:\s{0,100}"{1,20}({direction}[^"]{1,2000})""",
     """"message-id"{1,20}:\s{0,100}\["{1,20}<{0,100}({message_id}[^>"]{1,2000})""",
     """"detectedName"{1,20}:\s{0,100}"{1,20}\s{0,100}({attachment}[^"]{1,2000})"""",
+    """"detectedName":"({attachment_1}[^"]{1,2000})"(.{1,2000}?detectedName":"({attachment_2}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_3}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_4}[^"]{1,2000})?")?(.{1,2000}?detectedName":"({attachment_5}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_6}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_7}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_8}[^"]{1,2000})")?"""
     """"return-path"{1,20}:\s{0,100}\["{1,20}(<>|({return_path}[^"]{1,2000}))""""
   ]
 

@@ -11,7 +11,7 @@ Name = raw-5137
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({event_name}A directory service object was created)""",
-    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """exabeam_host=(gcs-topic|cc|({host}[\w.\-]{1,2000}))""",
     """({event_code}5137)""",
     """ComputerName =({host}[^\s]{1,2000})""",
     """Account Name(:|=)\s{0,100}({user}[^\s]{1,2000})""",

@@ -8,7 +8,8 @@ Name = defender-atp-security-alert-8
   Conditions = [ """"category":"Malware"""", """"title":""", """"vendor":"Microsoft"""", """"provider":"Microsoft Defender ATP"""" ]
   Fields = ${MicrosoftParserTemplates.json-microsoft-security-events.Fields}[
     """"fileStates":[^]]{1,2000}"path":"({file_parent}[^"]{1,2000})"""",
-    """"fileStates":[^]]{1,2000}?"name":"({file_path}(({file_parent}[^"]{1,2000}?)\/)?({file_name}[^"\/]{1,2000}))""""
+    """"fileStates":[^]]{1,2000}?"name":"({file_name}[^"\/]{1,2000}?(\.({file_ext}[^"\.]{1,2000}))?)","path":(?!null)""",
+    """"fileStates":[^]]{1,2000}?"name":"({file_path}(({file_parent}[^"]{1,2000}?)\/)?({file_name}[^"\/]{1,2000}))","path":null"""
   ]
 
 json-microsoft-security-events = {

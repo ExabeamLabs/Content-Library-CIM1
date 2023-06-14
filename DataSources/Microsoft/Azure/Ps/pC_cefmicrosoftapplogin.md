@@ -21,7 +21,7 @@ cef-azure-app-activity-1 = {
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w.\-]{1,2000})""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|cc|({host}[\w.\-]{1,2000}))""",
     """\Wdvc=(Unknown|Personal|({host}\S+))""",
     """\Wdvchost=(?:Unknown|Personal|({host}[\w\-.]{1,2000}))\s{1,100}\w+=""",
     """act=({activity}[^\s]{1,2000})\s{1,100}(\w+=|$)""",
