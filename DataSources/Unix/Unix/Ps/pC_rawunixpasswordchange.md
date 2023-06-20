@@ -13,6 +13,7 @@ Name = raw-unix-password-change
     """exabeam_host=(::ffff:)?(gcs-topic|({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.\-]{1,2000}))))""",
     """"agent_hostname":"(::ffff:)?({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[^"]{1,200})))"""",
     """\d\d:\d\d:\d\d(\.\S+|Z)? (::ffff:)?({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.\-]{1,2000})))""",
+    """({time}\d{4}-\d{1,2}-\d{1,2}T\d{1,2}:\d{1,2}:\d{1,2})(\S+|Z)? (\d{1,100}|({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.\-]{1,2000}))))"""
     """password changed for ({target_user}.+?)\s{0,20}("|$)""",
   ]
 
