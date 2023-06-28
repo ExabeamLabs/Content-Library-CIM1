@@ -17,7 +17,9 @@ Name = json-sentinelone-singularityp-web-activity-url
     """"event\.id":"({event_code}[^"]{1,2000})""",
     """"event\.url\.action":"({method}[^"]{1,2000})""",
     """"url\.address":"({full_url}(\w+:\/\/)?(({dest_ip}[A-Fa-f.:\d]{1,2000})|({web_domain}[^\/]{1,2000}?))({uri_path}\/[^\?]{0,2000}?)?({uri_query}\?[^"]{1,2000})?)""""
-   """"src\.process\.activeContentType":"({mime}[^"]+)""""
+    """"src\.process\.activeContentType":"({mime}[^"]+)"""",
+    """"src.process.parent.image.path":"{1,20}\s{0,100}({parent_process}({parent_process_directory}[^@]+?)[\\\/]{0,2000}({parent_process_name}[^"\\\/]{1,2000}))""""
+    """"src.process.image.path":"({process_path}({process_directory}(:?[\w:]{1,2000})?[^"]{0,2000}\\)({process_name}[^"]{1,2000}))""""
   ]
   DupFields = [ "host->dest_host"]
 

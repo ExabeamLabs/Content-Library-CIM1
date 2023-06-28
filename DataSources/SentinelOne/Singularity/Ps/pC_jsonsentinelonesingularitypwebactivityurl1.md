@@ -18,7 +18,9 @@ Name = json-sentinelone-singularityp-web-activity-url-1
     """"src\.process\.user\\{0,20}":\\{0,20}"((NT AUTHORITY|({domain}[^\\"]{1,2000}))[\\\/]{1,2000})?(SYSTEM|NETWORK SERVICE|LOCAL SERVICE|({user}[^\\"]{1,2000}))""",
     """"event\.url\.action\\{0,20}":\\{0,20}"({method}[^"\\]{1,2000})""",
     """"event\.id\\{0,20}":\\{0,20}"({event_code}[^"\\]{1,2000})""",	""""url\.address\\{0,20}":\\{0,20}"({full_url}(\w+:\/\/)?(({dest_ip}[A-Fa-f.:\d]{1,2000})|({web_domain}[^\/]{1,2000}?))({uri_path}\/[^\?]{0,2000}?)?({uri_query}\?[^"\\]{1,2000})?)\\{0,20}""""
-    """"src\.process\.activeContentType":"({mime}[^"\\]{1,2000})"""
+    """"src\.process\.activeContentType":"({mime}[^"\\]{1,2000})""",
+    """"src.process.parent.image.path\\{0,20}":\\{0,20}"{1,100}\s{0,100}({parent_process}({parent_process_directory}[^@]+?)[\\\/]{0,2000}({parent_process_name}[^"\\\/]{1,2000}))\\{0,20}"""",
+    """"src.process.image.path\\{0,20}":\\{0,20}"({process_path}({process_directory}(:?[\w:]{1,2000})?[^"]{0,2000}\\)({process_name}[^"\\]{1,2000}))\\{0,20}""""
   ]
   DupFields = [ "host->dest_host"]
 

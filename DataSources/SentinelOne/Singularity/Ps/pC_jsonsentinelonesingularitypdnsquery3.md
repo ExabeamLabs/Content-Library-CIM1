@@ -1,7 +1,7 @@
 #### Parser Content
 ```Java
 {
-Name = json-sentinelone-singularityp-alert-4
+Name = json-sentinelone-singularityp-dns-query-3
   Lms = Direct
   DataType = "dns-query"
   Conditions = [ """"dataSource.name\":\"SentinelOne\"""", """"i.scheme\":\"edr\"""", """"event.category\":\"dns\"""", """"event.type\":\"DNS Resolved\"""" ]
@@ -13,9 +13,8 @@ Name = json-sentinelone-singularityp-alert-4
     """"src.process.cmdline\\{0,20}":\\{0,20}"({command_line}.{1,3000}?)\\{0,20}",\\{0,20}"""",
     """"event.dns.response\\{0,20}":\\{0,20}"({response}[^"]{1,2000}?)\\{0,20}"""",
     """"event.dns.request\\{0,20}":\\{0,20}"({query}[^"]{1,2000}?)\\{0,20}"""",
-    """"event.category\\{0,20}":\\{0,20}"({alert_type}[^"\\]{1,2000})"""
   ]
-  DupFields = [ "host->dest_host", "event_name->alert_name" ]
+  DupFields = [ "host->dest_host" ]
 
 json-sentinelone-edr-events = {
     Vendor = SentinelOne
