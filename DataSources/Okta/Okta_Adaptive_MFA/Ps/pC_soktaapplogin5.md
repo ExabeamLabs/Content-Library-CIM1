@@ -4,6 +4,10 @@
 Name = s-okta-app-login-5
   DataType = "app-login"
   Conditions = [ """"eventType":"policy.evaluate_sign_on"""" ]
+  Fields = ${OktaParserTemplates.s-okta-app-login.Fields} [
+  """"displayMessage":"({additional_info}[^"]{1,2000})"""
+  """"eventType":"({activity}[^"]{1,2000})"""
+ ]
 
 s-okta-app-login = {
   Vendor = Okta
@@ -34,6 +38,7 @@ s-okta-app-login = {
     """"city":\s{0,100}"({location_city}[^"]{1,2000})""",
     """"state":\s{0,100}"({location_state}[^"]{1,2000})""",
     """"country":\s{0,100}"({location_country}[^"]{1,2000})"""
+    """"dtHash":"({md5}[^"]{1,2000})"""
   ]
     DupFields=["app->object"
 }

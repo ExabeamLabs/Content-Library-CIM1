@@ -41,6 +41,7 @@ cef-microsoft-app-activity = {
     """"SourceFileName":"({src_file_name}[^",]{1,2000})""",
     """"user":\{[^}]{1,20000}?displayName":"(Microsoft Teams Services|Office 365 SharePoint Online|Office 365 Exchange Online|({user_fullname}[^"]{1,2000}))"""",
     """"result":"failure","resultReason":"({failure_reason}[^"]{1,2000}?)\s{0,100}""""
+    """"UserType":"{0,100}({user_type}[^,]{1,2000})"""
   
 }
 ```
