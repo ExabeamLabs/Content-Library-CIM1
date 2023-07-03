@@ -32,6 +32,8 @@ cef-duo-app-activity-2 = {
     """"state":\s{0,100}"({state}[^"]{1,2000})""",
     """"country":\s{0,100}"({country}[^"]{1,2000})""",
     """"integration":\s{0,100}"({service}[^"]{1,2000})"""",
+    """"reason":\s{0,100}"({event_name}[^"]{1,2000})"""",
+    """"new_enrollment"\s{0,100}:\s{0,100}({new_enrollment}true|false)"""
   ]
   DupFields = ["activity->factor"
 }

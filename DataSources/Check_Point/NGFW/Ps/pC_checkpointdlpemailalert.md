@@ -64,7 +64,8 @@ checkpoint-firewall-1 = {
     """\Wreceived_bytes:"({bytes_in}\d{1,100})""",
     """\Wsent_bytes:"({bytes_out}\d{1,100})""",
     """\Wifname:"({interface_name}[^"]{1,2000})""",
-    """\W(user|src_user_name|dst_user_name):"(?:[^_"\s]{1,2000}_)?({user}[^"\s]{1,2000}?)\s{0,100}""""
+    """\W(user|src_user_name|dst_user_name):"(?:[^_"\s]{1,2000}_)?(({user_email}[^:@\s]{1,2000}@[^\.\s]{1,2000}\.[^:\s]{1,2000})|({user}[^"\s]{1,2000}?))\s{0,100}"""",
+    """resource:"({full_url}[^";,]{1,2000})""""
   ]
   DupFields = [ "action->outcome" 
 }
