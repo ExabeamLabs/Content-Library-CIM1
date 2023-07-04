@@ -11,8 +11,10 @@ Name = json-sentinelone-singularityp-process-created-1
     """"src.process.image.sha1":\s{0,100}\\?"+({hash_sha1}[^"\\]{1,2000})"""",
     """"src.process.user":"{0,100}((NT AUTHORITY|({domain}[^\\"]{1,2000}))[\\\/]{1,2000})?(SYSTEM|NETWORK SERVICE|LOCAL SERVICE|({user}[^\\"]{1,2000}))"""",
     """"src.process.parent.image.path":"{1,100}\s{0,100}({parent_process}({parent_process_directory}[^@]+?)[\\\/]{0,2000}({parent_process_name}[^"\\\/]{1,2000}))"""",
+    """process.image.path":"({process_path}({process_directory}(:?[\w:]{1,2000})?[^"]{0,2000}\\)({process_name}[^"]{1,2000}))"""",
     """"src.process.image.path":"({process_path}({process_directory}(:?[\w:]{1,2000})?[^"]{0,2000}\\)({process_name}[^"]{1,2000}))"""",
     """"src.process.pid":({pid}\d{1,100})""",
+    """process.cmdline":"[\\"]{0,100}({command_line}.{1,2000}?)",""",
     """"src.process.cmdline":"({command_line}.{1,2000}?)",""",
     """"src.process.parent.cmdline":"({parent_command_line}.{1,2000}?)","""
   ]
