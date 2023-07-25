@@ -2,17 +2,13 @@ Vendor: Trend Micro
 ===================
 Product: Trend Micro
 --------------------
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  56   |   20   |         5          |      2      |    2    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   0   |   0    |     0      |      3      |    3    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
-|:----:| ---- | ---- | ---- |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  network-connection-failed<br> ↳[trendmicro-network-connection](Ps/pC_trendmicronetworkconnection.md)<br><br> network-connection-successful<br> ↳[trendmicro-network-connection](Ps/pC_trendmicronetworkconnection.md)<br> | T1071 - Application Layer Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1190 - Exploit Public Fasing Application<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>56 Rules</li></ul><ul><li>20 Models</li></ul>](RM/r_m_trend_micro_trend_micro_Lateral_Movement.md) |
-|          [Malware](../../../UseCases/uc_malware.md)          |  network-connection-failed<br> ↳[trendmicro-network-connection](Ps/pC_trendmicronetworkconnection.md)<br><br> network-connection-successful<br> ↳[trendmicro-network-connection](Ps/pC_trendmicronetworkconnection.md)<br> | TA0011 - TA0011<br>    | [<ul><li>4 Rules</li></ul>](RM/r_m_trend_micro_trend_micro_Malware.md)    |
+|  Use-Case  | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                        | MITRE TTP | Content                                                    |
+|:----------:| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------- |
+| Enrichment |  database-failed-login<br> ↳ [cef-trendmicro-database-failed-login](Parsers/parserContent_cef-trendmicro-database-failed-login.md)<br><br> network-connection-failed<br> ↳ [trendmicro-network-connection](Parsers/parserContent_trendmicro-network-connection.md)<br><br> network-connection-successful<br> ↳ [trendmicro-network-connection](Parsers/parserContent_trendmicro-network-connection.md)<br> |           | [](Rules_Models/r_m_trend_micro_trend_micro_Enrichment.md) |
 
-MITRE ATT&CK® Framework for Enterprise
---------------------------------------
-| Initial Access                                                                         | Execution | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                                                                                                                                                                      | Exfiltration | Impact |
-| -------------------------------------------------------------------------------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
-| [Exploit Public Fasing Application](https://attack.mitre.org/techniques/T1190)<br><br> |           |             |                      |                 |                   |           |                  |            | [Proxy: Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003)<br><br>[Application Layer Protocol](https://attack.mitre.org/techniques/T1071)<br><br>[Proxy](https://attack.mitre.org/techniques/T1090)<br><br> |              |        |
+ATT&CK Matrix for Enterprise
+----------------------------
