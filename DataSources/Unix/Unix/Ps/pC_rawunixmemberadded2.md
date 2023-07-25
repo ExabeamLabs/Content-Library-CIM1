@@ -11,8 +11,7 @@ Name = raw-unix-member-added-2
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[\+\-][^\s]{1,2000})""",
-    """(T|\s)\d\d:\d\d:\d\d(\.?\S+)? ({host}[\w.\-]{1,2000})(\s\S+)?\susermod\[""",
+    """\d\d:\d\d:\d\d(\.\S+)? ({host}[\w.\-]{1,2000})""",
     """add \'({account_name}[^']{1,2000})\' to group \'({group_name}[^']{1,2000})\'""",
   ]
   DupFields=["host->dest_host"]

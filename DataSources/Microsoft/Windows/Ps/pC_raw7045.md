@@ -10,7 +10,7 @@ Name = raw-7045
   Conditions = [ """7045""", """A service was installed in the system.""" ]
   Fields = [
     """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
-    """exabeam_host=([^=]{1,2000}?@\s{0,100})?(gcs-topic|cc|({host}[\w.-]{1,2000}))""",   
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",   
     """({event_name}A service was installed in the system)""",
     """ComputerName =({host}[\w-.]{1,2000})\s""",
     """\WComputer=({host}[\w\-.]{1,2000})\s""",

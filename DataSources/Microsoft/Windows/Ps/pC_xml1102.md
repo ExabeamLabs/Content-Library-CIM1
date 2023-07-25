@@ -17,7 +17,7 @@ raw-1102 = {
   Product = Windows
   DataType = "windows-audit"
   Fields = [
-    """exabeam_host=(gcs-topic|cc|({host}[\w\-.]{1,2000}))""",
+    """exabeam_host=({host}[\w\-.]{1,2000})""",
     """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
     """Hostname":"({host}[^"]{1,2000})"""",
     """({event_code}1102)""",
