@@ -8,7 +8,7 @@ Name = s-sailpointsiq-ad-account-deleted
   Fields = ${SailPointSIQADTemplates.s-sailpointsiqad-activity.Fields} [
     """objectcn\s:\s({target_user}[^|]{1,2000})\s\|"""
   ]
-  DupFields = [ "host->src_host", "target_user->account_name"]
+  DupFields = [ "host->src_host" ]
 
 s-sailpointsiqad-activity = {
   Vendor = Sailpoint

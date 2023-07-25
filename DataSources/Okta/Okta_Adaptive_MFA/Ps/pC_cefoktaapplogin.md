@@ -37,7 +37,6 @@ s-okta-app-login = {
     """"city":\s{0,100}"({location_city}[^"]{1,2000})""",
     """"state":\s{0,100}"({location_state}[^"]{1,2000})""",
     """"country":\s{0,100}"({location_country}[^"]{1,2000})"""
-    """"dtHash":"({md5}[^"]{1,2000})"""
   ]
     DupFields=["app->object"
 }

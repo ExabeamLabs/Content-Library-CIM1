@@ -19,7 +19,7 @@ Name = cef-okta-member-added
     """"ip":"({src_ip}[a-fA-F\d:.]{1,2000})"""",
     """"outcome":\{"result":"({outcome}[^"]{1,2000})""""
   ]
-  DupFields = [ "outcome->result","target_user->account_name" ]
+  DupFields = [ "outcome->result" ]
 
 
 }

@@ -9,7 +9,7 @@ Name = proofpoint-email-6
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"from"""", """"rcpts"""", """"rule"""", """"helo"""", """"actions"""", """"suborgs"""", """"resolveStatus"""" ]
   Fields = [
-    """"ts"{1,20}:\s{0,100}"{1,20}({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,20}[\+\-]\d{1,4})""",
+    """"ts"{1,20}:\s{0,100}"{1,20}({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,3}[\+\-]\d{1,4})""",
     """"host"{1,20}:\s{0,100}"{1,20}\[?({host}[\w\-.]{1,2000})\]?"""",
     """"from"{1,20}:\s{0,100}"{1,20}({sender}[^"@]{1,2000}@[^"@]{1,2000})"""",
     """"rcpts"{1,20}:\s{0,100}\[({recipients}"{1,20}({recipient}[^"@]{1,2000}@[^"]{1,2000})"{0,20}[^\]]{0,2000}?)\]""",
@@ -21,7 +21,6 @@ Name = proofpoint-email-6
     """"routeDirection"{1,20}:\s{0,100}"{1,20}({direction}[^"]{1,2000})""",
     """"message-id"{1,20}:\s{0,100}\["{1,20}<{0,100}({message_id}[^>"]{1,2000})""",
     """"detectedName"{1,20}:\s{0,100}"{1,20}\s{0,100}({attachment}[^"]{1,2000})"""",
-    """"detectedName":"({attachment_1}[^"]{1,2000})"(.{1,2000}?detectedName":"({attachment_2}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_3}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_4}[^"]{1,2000})?")?(.{1,2000}?detectedName":"({attachment_5}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_6}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_7}[^"]{1,2000})")?(.{1,2000}?detectedName":"({attachment_8}[^"]{1,2000})")?"""
     """"return-path"{1,20}:\s{0,100}\["{1,20}(<>|({return_path}[^"]{1,2000}))""""
   ]
 

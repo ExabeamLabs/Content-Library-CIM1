@@ -10,7 +10,7 @@ Name = azure-app-activity-1
   Conditions = [""""activityDisplayName":"Update user"""", """"operationType":"Update"""", """"activityDateTime":"""", """StrongAuthenticationUserDetails""", """VoiceOnlyPhoneNumber""" ]
   Fields = [
     """"activityDateTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}[+-]\d\d:\d\d)"""",
-    """exabeam_host=(gcs-topic|cc|({host}[^\s]{1,2000}))""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
     """"result":"({outcome}[^"]{1,2000})"""",
     """"activityDisplayName":"({event_name}[^"]{1,2000})"""",
     """"operationType":"({activity}[^"]{1,2000})"""",
