@@ -41,7 +41,7 @@ azure-event-hub-network-events = {
    Lms = QRadar
    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
    Fields = [
-      """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|cc|({host}\S+))""",
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
       """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{7}Z)""",
       """initiatedBy":.+?userPrincipalName":"({user_email}[^",]{1,2000})""",
       """initiatedBy":.+?id":"({user_uid}[^",]{1,2000})""",

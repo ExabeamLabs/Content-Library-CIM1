@@ -3,9 +3,9 @@ Vendor: NCP
 ### Product: [NCP](../ds_ncp_ncp.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   5   |   5    |         2          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   5   |   5    |     2      |      3      |    3    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

@@ -2,17 +2,19 @@ Vendor: pfSense
 ===============
 Product: pfSense
 ----------------
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  56   |   20   |         5          |      2      |    2    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  30   |   14   |     4      |      1      |    1    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  network-connection-failed<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br><br> network-connection-successful<br> ↳[pfsense-network-connection-successful](Ps/pC_pfsensenetworkconnectionsuccessful.md)<br> | T1071 - Application Layer Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1190 - Exploit Public Fasing Application<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>56 Rules</li></ul><ul><li>20 Models</li></ul>](RM/r_m_pfsense_pfsense_Lateral_Movement.md) |
-|          [Malware](../../../UseCases/uc_malware.md)          |  network-connection-failed<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br><br> network-connection-successful<br> ↳[pfsense-network-connection-successful](Ps/pC_pfsensenetworkconnectionsuccessful.md)<br> | TA0011 - TA0011<br>    | [<ul><li>4 Rules</li></ul>](RM/r_m_pfsense_pfsense_Malware.md)    |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  file-read<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br> | T1003.001 - T1003.001<br>T1003.003 - T1003.003<br>T1083 - File and Directory Discovery<br> | [<ul><li>29 Rules</li></ul><ul><li>14 Models</li></ul>](RM/r_m_pfsense_pfsense_Compromised_Credentials.md) |
+|    [Data Access](../../../UseCases/uc_data_access.md)    |  file-read<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br> | T1083 - File and Directory Discovery<br>    | [<ul><li>24 Rules</li></ul><ul><li>13 Models</li></ul>](RM/r_m_pfsense_pfsense_Data_Access.md)    |
+|         [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)         |  file-read<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_pfsense_pfsense_Privilege_Abuse.md)    |
+|     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  file-read<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_pfsense_pfsense_Privileged_Activity.md)    |
 
-MITRE ATT&CK® Framework for Enterprise
---------------------------------------
-| Initial Access                                                                         | Execution | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                                                                                                                                                                      | Exfiltration | Impact |
-| -------------------------------------------------------------------------------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
-| [Exploit Public Fasing Application](https://attack.mitre.org/techniques/T1190)<br><br> |           |             |                      |                 |                   |           |                  |            | [Proxy: Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003)<br><br>[Application Layer Protocol](https://attack.mitre.org/techniques/T1071)<br><br>[Proxy](https://attack.mitre.org/techniques/T1090)<br><br> |              |        |
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution | Persistence                                                         | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access                                                          | Discovery                                                                         | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [OS Credential Dumping](https://attack.mitre.org/techniques/T1003)<br><br> | [File and Directory Discovery](https://attack.mitre.org/techniques/T1083)<br><br> |                  |            |                     |              |        |

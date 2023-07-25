@@ -7,7 +7,7 @@ Name = f5-asm-alert
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """ ASM:""", """"HTTP""", """Cookie:""" ]
+  Conditions = [ """ ASM:""", """HTTP""", """Cookie:""" ]
   Fields = [
     """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[^\s]{1,2000})\s{1,100}(\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({dest_host}[^\s]{1,2000})\s{1,100})?ASM:""",
     """\sASM:("[^"]{0,2000}",)"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",

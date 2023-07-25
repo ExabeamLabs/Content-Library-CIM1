@@ -2,11 +2,11 @@
 ```Java
 {
 Name = cef-sentinelone-security-alert-3
-  Product = Singularity
-  DataType = "registry-write"
+  Product = Singularity 
+  DataType = "process-created"
   Conditions = [ """CEF:""", """|Security|SentinelOne|""", """|registry|""" ]
   Fields = ${SentinelOneParserTemplates.cef-sentinelone-security-alert.Fields}[
-    """\sregistryPath:({object}({registry_path}({registry_key}[^"]+)\\({registry_value}[^"]{1,2000})))(\s{1,100}\w+:|\s{0,100}$)"""
+    """\sregistryPath:(|({object}.+?))(\s{1,100}\w+:|\s{0,100}$)""",
   ]
 
 cef-sentinelone-security-alert = {

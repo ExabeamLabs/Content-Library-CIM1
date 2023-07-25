@@ -3,9 +3,9 @@ Vendor: Palo Alto Networks
 ### Product: [Palo Alto Aperture](../ds_palo_alto_networks_palo_alto_aperture.md)
 ### Use-Case: [Destruction of Data](../../../../UseCases/uc_destruction_of_data.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   0    |         2          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   0    |     2      |      7      |    7    |
 
 | Event Type  | Rules    | Models |
 | ---- | ---- | ------ |

@@ -5,7 +5,7 @@ Name = azure-event-hub-file-events
   DataType = "file-operations"
   Conditions = ["""|beatname=eventhubbeat|""", """|device_type=eventhubbeat|""", """|subject=AdvancedHunting-DeviceFileEvents|""", """vmid=""", """@timestamp""", """@metadata""", """"ActionType":"""]
   Fields = ${MSParserTemplates.azure-event-hub.Fields} [
-    """"FolderPath":"({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}?(\.({file_ext}[^\\\/\.;"]{1,2000}))))"""",
+    """"FolderPath":"({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}?(\.({file_ext}[^\\\/\.;"]{1,2000}))))""",
   ]
 
 azure-event-hub = {
@@ -20,6 +20,7 @@ azure-event-hub = {
       """\Wdvc=({host}\S{1,2000})""",
       """\Wdvchost=({host}[\w\-.]{1,2000})""",
       """\Wact=({activity}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
+      """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
       """\WflexString1=({activity}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\WdestinationServiceName =({app}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\Wfname=({object}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",

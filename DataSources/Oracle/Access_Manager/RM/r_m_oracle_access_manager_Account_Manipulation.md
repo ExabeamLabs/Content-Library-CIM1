@@ -3,9 +3,9 @@ Vendor: Oracle
 ### Product: [Access Manager](../ds_oracle_access_manager.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   3   |   1    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   3   |   1    |     1      |      5      |    5    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -18,7 +18,8 @@ Name = cef-salesforce-failed-app-login
     """Status\\=({failure_reason}[^;]{1,2000})""",
     """Platform\\=({os}[^;]{1,2000})""",
     """TlsProtocol\\=({protocol}[^;]{1,2000})""",
-    """Browser\\=({browser}.+?)\s{0,100}(\w+=|$|\s{0,100}(\d{0,20}\s)")""",
+    """Browser\\=({browser}.+?)\s{0,100}(\w+=|$)""",
+    """dvchost=({src_host}.+?)\s{0,100}(\w+=|$)""",
     """({app}Sales Cloud)""",
   ]
 

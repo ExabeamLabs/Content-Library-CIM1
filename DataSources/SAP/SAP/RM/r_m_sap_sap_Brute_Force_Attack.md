@@ -3,9 +3,9 @@ Vendor: SAP
 ### Product: [SAP](../ds_sap_sap.md)
 ### Use-Case: [Brute Force Attack](../../../../UseCases/uc_brute_force_attack.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   0    |     1      |     10      |   10    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

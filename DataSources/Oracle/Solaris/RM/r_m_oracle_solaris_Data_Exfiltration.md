@@ -3,9 +3,9 @@ Vendor: Oracle
 ### Product: [Solaris](../ds_oracle_solaris.md)
 ### Use-Case: [Data Exfiltration](../../../../UseCases/uc_data_exfiltration.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  13   |   0    |         11         |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  13   |   0    |     11     |      2      |    2    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

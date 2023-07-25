@@ -25,7 +25,6 @@ Name = cef-defender-graph-security-alert
      """"{1,20}sourceMaterials"{1,20}:\["{1,20}({additional_info}[^"]{1,2000})""",
      """"id"{1,20}:"{1,20}({alert_id}[^"]{1,2000})""""
    ]
-   DupFields = [ "host-> dest_host"]
 
 
 }

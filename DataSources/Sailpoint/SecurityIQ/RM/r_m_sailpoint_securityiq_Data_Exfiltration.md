@@ -3,9 +3,9 @@ Vendor: Sailpoint
 ### Product: [SecurityIQ](../ds_sailpoint_securityiq.md)
 ### Use-Case: [Data Exfiltration](../../../../UseCases/uc_data_exfiltration.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   2   |   1    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   2   |   1    |     1      |     13      |   13    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

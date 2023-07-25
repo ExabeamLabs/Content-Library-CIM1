@@ -6,8 +6,8 @@ Name = azure-ad-account-password-change-1
   Conditions = [ """Microsoft.aadiam""", """Self-service password reset""", """tenantId":""""]
   Fields = ${MSParserTemplates.azure-ad-activity.Fields} [
     """({event_name}Self-service password reset)""",
-    """"targetResources":.+?userPrincipalName":"(({target_user_email}[^@",\s]{1,200}@[^@",\s]{1,200})|({target_user}[^@",\s]{1,200}))""",
-   """"resultReason":"({additional_info}[^"]{1,2000})""""
+    """targetResources":.+?userPrincipalName":"({target_user}[^",]{1,2000})""",
+    """targetResources":.+?id":"({user_sid}[^",]{1,2000})"""
   ]
 
 azure-ad-activity = {
@@ -16,7 +16,7 @@ azure-ad-activity = {
    Lms = QRadar
    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
    Fields = [
-      """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|cc|({host}\S+))""",
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
       """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{7}Z)""",
       """initiatedBy":.+?userPrincipalName":"({user_email}[^",]{1,2000})""",
       """initiatedBy":.+?id":"({user_uid}[^",]{1,2000})""",

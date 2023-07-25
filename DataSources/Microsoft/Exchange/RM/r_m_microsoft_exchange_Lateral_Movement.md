@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Exchange](../ds_microsoft_exchange.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   2   |   0    |         2          |      4      |    4    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   2   |   0    |     2      |     10      |   10    |
 
 | Event Type          | Rules    | Models |
 | ---- | ---- | ------ |
