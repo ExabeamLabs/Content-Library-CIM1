@@ -21,9 +21,6 @@ Name = trendmicro-network-connection
     """[\|\s]act=({activity}[^\|\s]{1,2000})""",
     """[\|\s]dmac=({dest_mac}[^\s\|]{1,2000}?)[\s\|]""",
     """CEF:(\s{0,10}\d{1,10})\|(([^\|]{1,2000})\|){4}({alert_name}[^\|]{1,2000})""",
-    """cat=({category}[^=]{1,2000}?)\s{0,100}\w+="""
-    """name=({alert_name}[^=]{1,2000}?)\s{0,100}\w+="""
-    """sev=({alert_severity}[^\s]{1,2000})"""
   ]
 
 

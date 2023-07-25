@@ -21,7 +21,6 @@ paloalto-vpn = {
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Fields = [
-    """exabeam_host=({host}[^\s]{1,2000})""",
     """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,9}Z)""",
     """"host":"({host}[^"]{1,2000})"""",
     """"DeviceName":"({host}[^"\s]{1,2000})"""",
@@ -29,13 +28,11 @@ paloalto-vpn = {
     """"PublicIPv(4|6)":"({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """"Source(Address|IP)":"({src_ip}[a-fA-F\d:.]{1,2000})""",
     """"DestinationAddress":"({dest_ip}[a-fA-F\d:.]{1,2000})""",
-    """"(Source)?User(Name)?":"((na|NA|({domain}[^"\\]{1,2000}))\\{1,20})?(({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})|(pre-logon|({user}[^"]{1,2000})))"""", 
+    """"(Source)?User(Name)?":"((na|NA|({domain}[^"\\]{1,2000}))\\{1,20})?(({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})|({user}[^"]{1,2000}))"""", 
     """"SourcePort":({src_port}\d{1,100})""",
     """"DestinationPort":({dest_port}\d{1,100})""",
     """"Protocol":"({protocol}[^"]{1,2000})"""",
-    """"LogType":"({log_type}[^"]{1,2000})"""",
-    """"AuthMethod":"({auth_method}[^"]{1,2000})"""",
-    """"EventIDValue":"({event_name}[^"]{1,2000})""""
+    """"LogType":"({log_type}[^"]{1,2000})""""
   
 }
 ```
