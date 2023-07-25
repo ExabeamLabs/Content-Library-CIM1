@@ -2,16 +2,16 @@ Vendor: Armis
 =============
 Product: Armis
 --------------
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   3   |   2    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  31   |   15   |     5      |      2      |    2    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP          | Content    |
-|:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  alert-iot<br> ↳[armis-alert-iot](Ps/pC_armisalertiot.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_armis_armis_Compromised_Credentials.md) |
+|                Use-Case                | Event Types/Parsers                                                                                                                                                                             | MITRE TTP                                                                                                                               | Content                                                                                        |
+|:--------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  network-alert<br> ↳ [armis-network-alert](Parsers/parserContent_armis-network-alert.md)<br><br> security-alert<br> ↳ [armis-security-alert](Parsers/parserContent_armis-security-alert.md)<br> | T1066 - T1066<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1086 - T1086<br>T1204 - User Execution<br> | [<ul><li>31 Rules</li></ul><ul><li>15 Models</li></ul>](Rules_Models/r_m_armis_armis_Other.md) |
 
-MITRE ATT&CK® Framework for Enterprise
---------------------------------------
-| Initial Access                                                      | Execution | Persistence                                                         | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
-| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
-| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                         | Privilege Escalation                                                                                                                                          | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |

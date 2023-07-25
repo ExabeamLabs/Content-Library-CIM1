@@ -2,17 +2,16 @@ Vendor: IBM
 ===========
 Product: IBM Lotus Notes
 ------------------------
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  39   |   17   |         5          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  17   |   13   |     2      |      2      |    2    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
-|:----:| ---- | ---- | ---- |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  network-connection-successful<br> ↳[ibm-lotus-network-connection](Ps/pC_ibmlotusnetworkconnection.md)<br> | T1071 - Application Layer Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1190 - Exploit Public Fasing Application<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>39 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_ibm_ibm_lotus_notes_Lateral_Movement.md) |
-|          [Malware](../../../UseCases/uc_malware.md)          |  network-connection-successful<br> ↳[ibm-lotus-network-connection](Ps/pC_ibmlotusnetworkconnection.md)<br> | TA0011 - TA0011<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_ibm_ibm_lotus_notes_Malware.md)    |
+|                Use-Case                | Event Types/Parsers                                                                                                                                                                                                                          | MITRE TTP                                               | Content                                                                                                |
+|:--------------------------------------:| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [Other](../../../UseCases/uc_other.md) |  database-update<br> ↳ [ibm-lotus-database-update](Parsers/parserContent_ibm-lotus-database-update.md)<br><br> network-connection-successful<br> ↳ [ibm-lotus-network-connection](Parsers/parserContent_ibm-lotus-network-connection.md)<br> | T1065 - T1065<br>T1071 - Application Layer Protocol<br> | [<ul><li>17 Rules</li></ul><ul><li>13 Models</li></ul>](Rules_Models/r_m_ibm_ibm_lotus_notes_Other.md) |
 
-MITRE ATT&CK® Framework for Enterprise
---------------------------------------
-| Initial Access                                                                         | Execution | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                                                                                                                                                                      | Exfiltration | Impact |
-| -------------------------------------------------------------------------------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ------ |
-| [Exploit Public Fasing Application](https://attack.mitre.org/techniques/T1190)<br><br> |           |             |                      |                 |                   |           |                  |            | [Proxy: Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003)<br><br>[Application Layer Protocol](https://attack.mitre.org/techniques/T1071)<br><br>[Proxy](https://attack.mitre.org/techniques/T1090)<br><br> |              |        |
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access | Execution | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                             | Exfiltration | Impact |
+| -------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------------------------------------------------------------------- | ------------ | ------ |
+|                |           |             |                      |                 |                   |           |                  |            | [Application Layer Protocol](https://attack.mitre.org/techniques/T1071)<br><br> |              |        |
