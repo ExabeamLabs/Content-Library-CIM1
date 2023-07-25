@@ -7,7 +7,7 @@ Name = zoom-meeting-updated
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "epoch"
-  Conditions = [ """"event":"meeting.updated"""" ]
+  Conditions = [ """|Skyformation|""", """"event":"meeting.updated"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\WdestinationServiceName =({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
@@ -17,7 +17,7 @@ Name = zoom-meeting-updated
     """"old_object"\s{0,100}:\s{0,100}\{.*?"password"\s{0,100}:\s{0,100}"({old_password}[^"]{1,2000})"""",
     """"object"\s{0,100}:\s{0,100}\{.*?"password"\s{0,100}:\s{0,100}"({new_password}[^"]{1,2000})"""",
     """"object"\s{0,100}:\s{0,100}\{"id"\s{0,100}:\s{0,100}({meeting_number}\d{1,100})""",
-    """"time_stamp"\s{0,100}:\s{0,100}({time}\d{1,13})"""
+    """"time_stamp"\s{0,100}:\s{0,100}"({time}\d{1,100})"""
   ]
 
 

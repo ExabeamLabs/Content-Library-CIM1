@@ -3,10 +3,10 @@ Vendor: OSSEC
 ### Product: [OSSEC](../ds_ossec_ossec.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   0    |     1      |      2      |    2    |
 
-| Event Type     | Rules    | Models |
-| ---- | ---- | ------ |
-| security-alert | <b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive |        |
+| Event Type             | Rules                                                                                                             | Models |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------- | ------ |
+| file-permission-change | <b>T1078 - Valid Accounts</b><br> ↳ <b>FA-Account-deactivated</b>: File Activity from a de-activated user account |        |

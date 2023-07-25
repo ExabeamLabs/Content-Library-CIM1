@@ -3,10 +3,10 @@ Vendor: McAfee
 ### Product: [McAfee Solidifier](../ds_mcafee_mcafee_solidifier.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   4   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   0    |     1      |      1      |    1    |
 
-| Event Type     | Rules    | Models |
-| ---- | ---- | ------ |
-| security-alert | <b>T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools</b><br> ↳ <b>A-ALERT-DL</b>: DL Correlation rule alert on asset<br> ↳ <b>A-ALERT-Correlation-Rule</b>: Correlation rule alert on asset<br> ↳ <b>ALERT-Correlation-Rule</b>: Correlation rule alert on asset accessed by this user<br> ↳ <b>ALERT-DL</b>: DL Correlation rule alert on asset accessed by this user |        |
+| Event Type  | Rules                                                                                                                          | Models |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| local-logon | <b>T1558 - Steal or Forge Kerberos Tickets</b><br> ↳ <b>EXPERT-PENTEST-DOMAINS</b>: Possible credentials theft attack detected |        |

@@ -6,7 +6,7 @@ Name = code42-email-out-operations
   Product = Code42 Incydr
   Lms = Direct
   DataType = "dlp-email-alert"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss:SSZ"
   Conditions= [ """"fileCategoryByExtension"""",  """"eventType":"EMAILED"""", """"osHostName""", """act=send""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
@@ -19,8 +19,8 @@ Name = code42-email-out-operations
     """"fileSize"{1,20}:\s{0,100}({bytes}\d{1,100})""",
     """"osHostName"{1,20}:\s{0,100}"{1,20}({dest_host}[^"]{1,2000})"""",
     """"eventType":"({alert_type}[^"]{1,2000})""",
-    """"emailSender":"{1,20}({sender}[^"@]{1,2000}@[^"]{1,2000})"""",
-    """"emailRecipients":\[*"{1,20}({recipient}[^"@]{1,2000}@[^"]{1,2000})"""",
+    """"emailSender":"{1,20}({sender}[^"@]{1,2000}@({external_domain_sender}[^"]{1,2000}))"""",
+    """"emailRecipients":\[*"{1,20}({recipient}[^"@]{1,2000}@({external_domain_recipient}[^"]{1,2000}))"""",
     """"emailSubject":\[*"{1,20}({subject}[^"]{1,2000})"""",
 	
   ]

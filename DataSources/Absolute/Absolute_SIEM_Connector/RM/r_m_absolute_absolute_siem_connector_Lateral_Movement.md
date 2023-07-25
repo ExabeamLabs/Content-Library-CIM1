@@ -3,12 +3,10 @@ Vendor: Absolute
 ### Product: [Absolute SIEM Connector](../ds_absolute_absolute_siem_connector.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   5   |   0    |         2          |      3      |    3    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   4   |   2    |     1      |      1      |    1    |
 
-| Event Type     | Rules    | Models |
-| ---- | ---- | ------ |
-| app-activity   | <b>T1090.003 - Proxy: Multi-hop Proxy</b><br> ↳ <b>Auth-Tor-Shost</b>: User authentication or login from a known TOR IP    |        |
-| app-login      | <b>T1090.003 - Proxy: Multi-hop Proxy</b><br> ↳ <b>Auth-Tor-Shost</b>: User authentication or login from a known TOR IP    |        |
-| security-alert | <b>T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools</b><br> ↳ <b>A-ALERT-DL</b>: DL Correlation rule alert on asset<br> ↳ <b>A-ALERT-Correlation-Rule</b>: Correlation rule alert on asset<br> ↳ <b>ALERT-Correlation-Rule</b>: Correlation rule alert on asset accessed by this user<br> ↳ <b>ALERT-DL</b>: DL Correlation rule alert on asset accessed by this user |        |
+| Event Type          | Rules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Models                                                                                                                                |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| web-activity-denied | <b>T1071.001 - Application Layer Protocol: Web Protocols</b><br> ↳ <b>A-NETF-HCountry-Outbound-WEB-F</b>: First failed web browsing connection to this country from asset<br> ↳ <b>A-NETF-HCountry-Outbound-WEB-A</b>: Web browsing connection to abnormal country for asset has failed<br> ↳ <b>A-NETF-OCountry-Outbound-WEB-F</b>: First failed web browsing connection to this country from organization<br> ↳ <b>A-NETF-OCountry-Outbound-WEB-A</b>: Web browsing connection to abnormal country for the organization has failed |  • <b>A-NET-OCountry-Outbound</b>: Outbound country per organization<br> • <b>A-NET-HCountry-Outbound</b>: Outbound country per asset |
