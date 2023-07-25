@@ -16,8 +16,7 @@ Name = s-xml-4740
     """<Data Name ='SubjectLogonId'>({logon_id}[^<]{1,2000})</Data>""",
     """<Data Name ='TargetSid'>(?:NONE_MAPPED|({user_sid}[^<]{1,2000}))</Data>""",
     """<Data Name ='TargetUserName'>(?=\w)({user}[^<]{1,2000})</Data>""",
-    """<Data Name ='SubjectDomainName'>(?=\w)({domain}[^<]{1,2000})</Data>""",
-    """<Data Name ='TargetDomainName'>({src_host}[^<]{1,2000})</Data>"""
+    """<Data Name ='SubjectDomainName'>(?=\w)({domain}[^<]{1,2000})</Data>"""
   ]
   DupFields = [ "host->dest_host" ]
 

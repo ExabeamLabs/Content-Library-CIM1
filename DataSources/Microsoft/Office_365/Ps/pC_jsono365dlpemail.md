@@ -9,12 +9,13 @@ Name = json-o365-dlp-email
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """"MessageTraceId":"""", """"SenderAddress":"""", """"RecipientAddress":"""", """"Subject":""" ]
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|cc|({host}[\w\-.]{1,2000}))""",
-    """"StartDate":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
     """"StartDate":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
-    """"Subject":"\s{0,100}(|({subject}[^=]{1,2000}?))\s{0,100}","\w+?":""",
+    """"Subject":"\s{0,100}({subject}[^"]{1,2000}?)\s{0,100}",""",
     """"Direction":"({direction}[^"]{1,2000})"""",
     """"SenderAddress":"({sender}[^",]{1,2000})"""",
+    """"SenderAddress":"[^@]{1,2000}@({external_domain_sender}[^",]{1,2000})"""",
+    """"RecipientAddress":"[^@]{1,2000}@({external_domain_recipient}[^",]{1,2000})"""",
     """"RecipientAddress":"({recipients}[^"]{1,2000})"""",
     """"RecipientAddress":"({recipient}[^"\s,;]{1,2000})""",
     """"Size":"?({bytes}\d{1,100})""",
@@ -26,7 +27,7 @@ Name = json-o365-dlp-email
     """"triggered-by":\{"user-email":"({user_email}[^",]{1,2000})"""",
     """Category\s{1,100}\[({category}[^\]]{1,2000})\]"""
   ]
-  DupFields = [ "alert_type->alert_name" ,"sender->orig_user"]
+  DupFields = [ "alert_type->alert_name" ]
 
 
 }

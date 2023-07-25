@@ -2,18 +2,19 @@ Vendor: Forcepoint
 ==================
 Product: Forcepoint Insider Threat
 ----------------------------------
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  33   |   20   |         4          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   5   |   2    |     3      |      1      |    1    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md) |  dlp-alert<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br> | [<ul><li>29 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Data_Exfiltration.md) |
-|         [Data Leak](../../../UseCases/uc_data_leak.md)         |  dlp-alert<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br> | [<ul><li>29 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Data_Leak.md)         |
-|    [Malware](../../../UseCases/uc_malware.md)    |  dlp-alert<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | TA0002 - TA0002<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Malware.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1133 - External Remote Services<br>   | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1133 - External Remote Services<br>   | [<ul><li>1 Rules</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Compromised_Credentials.md)    |
+|    [Evasion](../../../UseCases/uc_evasion.md)    |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Evasion.md)    |
+|    [Ransomware](../../../UseCases/uc_ransomware.md)    |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Ransomware.md)    |
 
-MITRE ATT&CK® Framework for Enterprise
---------------------------------------
-| Initial Access | Execution | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                             | Exfiltration                                                                | Impact |
-| -------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------ |
-|                |           |             |                      |                 |                   |           |                  |            | [Application Layer Protocol](https://attack.mitre.org/techniques/T1071)<br><br> | [Automated Exfiltration](https://attack.mitre.org/techniques/T1020)<br><br> |        |
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                                                                                                   | Execution | Persistence                                                                                                                                      | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                                                                                       | Exfiltration | Impact |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            | [Proxy: Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003)<br><br>[Proxy](https://attack.mitre.org/techniques/T1090)<br><br> |              |        |

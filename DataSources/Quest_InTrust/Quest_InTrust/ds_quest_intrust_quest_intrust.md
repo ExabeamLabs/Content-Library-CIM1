@@ -2,13 +2,13 @@ Vendor: Quest InTrust
 =====================
 Product: Quest InTrust
 ----------------------
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   0   |   0    |         0          |      0      |    0    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   0   |   0    |     0      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers | MITRE ATT&CK® TTP | Content    |
-|:----------:| ---- | ---- | ---- |
-| Enrichment |    |    | [](RM/r_m_quest_intrust_quest_intrust_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
+|:----------:| ---- | --------- | ---- |
+| Enrichment |  computer-logon<br> ↳[s-intrust-dns](Ps/pC_sintrustdns.md)<br> |    | [](RM/r_m_quest_intrust_quest_intrust_Enrichment.md) |
 
-MITRE ATT&CK® Framework for Enterprise
---------------------------------------
+ATT&CK Matrix for Enterprise
+----------------------------

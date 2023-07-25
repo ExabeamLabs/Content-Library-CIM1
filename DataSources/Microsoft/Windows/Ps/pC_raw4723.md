@@ -9,13 +9,11 @@ Name = raw-4723
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = [ "An attempt was made to change" ]
     Fields = [
-      """({time}\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d\s((?i)am|pm))""",
       """({event_name}An attempt was made to change an account's password)""",
-      """"agent_hostname":"({host}[^"]{1,200})"""",
-      """exabeam_host=(gcs-topic|({host}[\w.\-]{1,2000}))""",
-      """({host}[^\s]{1,2000})\s({time}\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d\s\w{2})""",
+      """exabeam_host=({host}[\w.\-]{1,2000})""",
       """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
       """timestamp"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d\+\d\d\d\d)""",
+      """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """\Wrt=({time}\d{1,100})""",
       """Security,(rn=)?({record_id}[\d]{1,2000})""",
       """({host}[\w.\-]{1,2000})\s{0,100}:\s{1,100}An attempt was made to change""",

@@ -5,11 +5,11 @@ Name = json-azure-ad-security-alert-1
   Vendor = Microsoft
   Product = Azure AD Identity Protection
   Lms = Splunk
-  DataType = "alert"
+  DataType = "security-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [ """"category":""", """"ImpossibleTravel"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"IPC"""" ]
   Fields = [
-     """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
+     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
      """"id":\s{0,100}"({alert_id}[^"]{1,2000})"""",
      """"title":\s{0,100}"({alert_name}[^"]{1,2000})"""",
      """"severity":\s{0,100}"({alert_severity}[^"]{1,2000})"""",
@@ -23,7 +23,6 @@ Name = json-azure-ad-security-alert-1
      """"domainName"{1,20}:\s{0,100}"{1,20}({domain}[^"]{1,2000})"""",
      """"logonLocation"{1,20}:\s{0,100}"{1,20}({location}[^"]{1,2000})""""
      """"userPrincipalName":\s{0,100}"({user_upn}[^"]{1,2000}?)"""",
-     """status=({outcome}[^\s]{1,2000})"""
   ]
 
 

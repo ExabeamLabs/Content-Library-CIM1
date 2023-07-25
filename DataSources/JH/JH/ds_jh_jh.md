@@ -2,17 +2,19 @@ Vendor: JH
 ==========
 Product: JH
 -----------
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  18   |   7    |     5      |      1      |    1    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP          | Content    |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-|     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  file-download<br> ↳[jh-file-download](Ps/pC_jhfiledownload.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_jh_jh_Privilege_Abuse.md)     |
-| [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  file-download<br> ↳[jh-file-download](Ps/pC_jhfiledownload.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_jh_jh_Privileged_Activity.md) |
+|     [Cryptomining](../../../UseCases/uc_cryptomining.md)     |  network-connection-failed<br> ↳[jh-file-download](Ps/pC_jhfiledownload.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_jh_jh_Cryptomining.md)    |
+|          [Evasion](../../../UseCases/uc_evasion.md)          |  network-connection-failed<br> ↳[jh-file-download](Ps/pC_jhfiledownload.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>T1090.004 - T1090.004<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_jh_jh_Evasion.md)    |
+| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  network-connection-failed<br> ↳[jh-file-download](Ps/pC_jhfiledownload.md)<br> | T1071 - Application Layer Protocol<br>T1090.002 - Proxy: External Proxy<br> | [<ul><li>16 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_jh_jh_Lateral_Movement.md) |
+|          [Malware](../../../UseCases/uc_malware.md)          |  network-connection-failed<br> ↳[jh-file-download](Ps/pC_jhfiledownload.md)<br> | T1071 - Application Layer Protocol<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_jh_jh_Malware.md)    |
 
-MITRE ATT&CK® Framework for Enterprise
---------------------------------------
-| Initial Access                                                      | Execution | Persistence                                                         | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
-| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
-| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access | Execution | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                                                                                                                                                                                                                                                    | Exfiltration | Impact                                                                  |
+| -------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ----------------------------------------------------------------------- |
+|                |           |             |                      |                 |                   |           |                  |            | [Proxy: Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003)<br><br>[Proxy: External Proxy](https://attack.mitre.org/techniques/T1090/002)<br><br>[Application Layer Protocol](https://attack.mitre.org/techniques/T1071)<br><br>[Proxy](https://attack.mitre.org/techniques/T1090)<br><br> |              | [Resource Hijacking](https://attack.mitre.org/techniques/T1496)<br><br> |

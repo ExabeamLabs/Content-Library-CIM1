@@ -3,10 +3,10 @@ Vendor: Swipes
 ### Product: [Swipes](../ds_swipes_swipes.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   1    |     1      |      1      |    1    |
 
-| Event Type      | Rules    | Models |
-| ---- | ---- | ------ |
-| physical-access | <b>T1078 - Valid Accounts</b><br> ↳ <b>PA-DU</b>: Badge access by disabled user |        |
+| Event Type | Rules                                                                                                       | Models                                                          |
+| ---------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| vpn-logout | <b>T1078 - Valid Accounts</b><br> ↳ <b>WPA-UACount</b>: Abnormal number of privilege access events for user |  • <b>WPA-UACount</b>: Count of admin privilege events for user |

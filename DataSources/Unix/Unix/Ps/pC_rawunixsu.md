@@ -10,12 +10,11 @@ Name = raw-unix-su
   Conditions = [ "session opened for user","su:", """(uid=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[\+\-][^\s]{1,2000})""",
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?(gcs-topic|({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.\-]{1,2000}))))""",
-    """"agent_hostname":"(::ffff:)?({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[^"]{1,200})))"""",
-    """(T|\s)\d\d:\d\d:\d\d(\.?\S+)? (::ffff:)?({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.\-]{1,2000})))\s{1,100}su(:|\[)""",
-    """({event_code}su):.+?for user ({account}[^\s]{1,2000}) by ({user}[\w\.\-]{1,2000})?\(uid=({user_uid}\d{1,100})\)"""
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w.\-]{1,2000})""",
+    """\d\d:\d\d:\d\d ({host}[\w.\-]{1,2000})\s{1,100}su:""",
+    """({event_code}su):.+?for user ({account}[^\s]{1,2000}) by ({user}[\w\.]{1,2000})?\(uid=({user_uid}\d{1,100})\)"""
   ]
+DupFields=["host->dest_host"]
 
 
 }

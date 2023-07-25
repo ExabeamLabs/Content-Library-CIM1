@@ -2,13 +2,13 @@ Vendor: IBM
 ===========
 Product: Guardium
 -----------------
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   0   |   0    |         0          |      0      |    0    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   0   |   0    |     0      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers | MITRE ATT&CK® TTP | Content    |
-|:----------:| ---- | ---- | ---- |
-| Enrichment |    |    | [](RM/r_m_ibm_guardium_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
+|:----------:| ---- | --------- | ---- |
+| Enrichment |  database-failed-login<br> ↳[s-guardium-db-access](Ps/pC_sguardiumdbaccess.md)<br> |    | [](RM/r_m_ibm_guardium_Enrichment.md) |
 
-MITRE ATT&CK® Framework for Enterprise
---------------------------------------
+ATT&CK Matrix for Enterprise
+----------------------------
