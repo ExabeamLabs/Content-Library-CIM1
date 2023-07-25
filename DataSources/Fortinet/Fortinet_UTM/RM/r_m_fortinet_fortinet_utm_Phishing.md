@@ -3,9 +3,9 @@ Vendor: Fortinet
 ### Product: [Fortinet UTM](../ds_fortinet_fortinet_utm.md)
 ### Use-Case: [Phishing](../../../../UseCases/uc_phishing.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   5   |   1    |         6          |      3      |    3    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   5   |   1    |     6      |     10      |   10    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

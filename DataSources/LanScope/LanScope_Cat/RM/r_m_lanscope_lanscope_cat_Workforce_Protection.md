@@ -3,9 +3,9 @@ Vendor: LanScope
 ### Product: [LanScope Cat](../ds_lanscope_lanscope_cat.md)
 ### Use-Case: [Workforce Protection](../../../../UseCases/uc_workforce_protection.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   4   |   2    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   4   |   2    |     1      |     13      |   13    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -3,10 +3,12 @@ Vendor: Microsoft
 ### Product: [Windows Defender](../ds_microsoft_windows_defender.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   4   |   0    |     3      |      4      |    4    |
 
-| Event Type     | Rules    | Models |
+| Event Type      | Rules    | Models |
 | ---- | ---- | ------ |
-| security-alert | <b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive |        |
+| file-alert      | <b>T1078 - Valid Accounts</b><br> ↳ <b>FA-Account-deactivated</b>: File Activity from a de-activated user account    |        |
+| process-created | <b>T1482 - Domain Trust Discovery</b><br> ↳ <b>A-Trickbot-Recon</b>: Trickbot malware domain recon activity on this asset<br> ↳ <b>Trickbot-Recon</b>: Trickbot malware domain recon activity |        |
+| security-alert  | <b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive    |        |

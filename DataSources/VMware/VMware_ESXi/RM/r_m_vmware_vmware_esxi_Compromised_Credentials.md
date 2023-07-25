@@ -3,9 +3,9 @@ Vendor: VMware
 ### Product: [VMware ESXi](../ds_vmware_vmware_esxi.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  36   |   16   |         8          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  36   |   16   |     8      |      2      |    2    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

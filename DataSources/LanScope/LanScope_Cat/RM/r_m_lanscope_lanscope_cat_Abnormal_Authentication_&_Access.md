@@ -3,9 +3,9 @@ Vendor: LanScope
 ### Product: [LanScope Cat](../ds_lanscope_lanscope_cat.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  37   |   19   |         4          |      5      |    5    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  37   |   19   |     4      |     13      |   13    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

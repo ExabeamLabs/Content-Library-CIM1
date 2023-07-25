@@ -3,9 +3,9 @@ Vendor: Box
 ### Product: [Box Cloud Content Management](../ds_box_box_cloud_content_management.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   3   |   1    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   3   |   1    |     1      |      9      |    9    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

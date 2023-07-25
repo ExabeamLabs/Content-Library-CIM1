@@ -3,9 +3,9 @@ Vendor: MasterSAM
 ### Product: [MasterSAM PAM](../ds_mastersam_mastersam_pam.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  39   |   19   |         8          |      2      |    2    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  39   |   19   |     8      |      4      |    4    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -3,9 +3,9 @@ Vendor: Ping Identity
 ### Product: [Ping Identity](../ds_ping_identity_ping_identity.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   3   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   3   |   0    |     1      |      8      |    8    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

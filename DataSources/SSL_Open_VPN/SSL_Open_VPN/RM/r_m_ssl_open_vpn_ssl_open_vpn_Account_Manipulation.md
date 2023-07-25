@@ -3,9 +3,9 @@ Vendor: SSL Open VPN
 ### Product: [SSL Open VPN](../ds_ssl_open_vpn_ssl_open_vpn.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  10   |   7    |         2          |      2      |    2    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  10   |   7    |     2      |      7      |    7    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

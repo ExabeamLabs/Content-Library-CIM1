@@ -3,9 +3,9 @@ Vendor: BeyondTrust
 ### Product: [BeyondTrust Privileged Identity](../ds_beyondtrust_beyondtrust_privileged_identity.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   3   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   3   |   0    |     1      |      7      |    7    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

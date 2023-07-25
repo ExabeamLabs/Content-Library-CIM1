@@ -3,9 +3,9 @@ Vendor: Ipswitch
 ### Product: [IPswitch MoveIt](../ds_ipswitch_ipswitch_moveit.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   2   |   0    |         2          |      3      |    3    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   2   |   0    |     2      |      5      |    5    |
 
 | Event Type       | Rules    | Models |
 | ---- | ---- | ------ |

@@ -3,9 +3,9 @@ Vendor: Proofpoint
 ### Product: [Proofpoint Enterprise Protection](../ds_proofpoint_proofpoint_enterprise_protection.md)
 ### Use-Case: [Workforce Protection](../../../../UseCases/uc_workforce_protection.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   4   |   1    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   4   |   1    |     1      |      4      |    4    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

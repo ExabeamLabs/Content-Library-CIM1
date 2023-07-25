@@ -3,9 +3,9 @@ Vendor: Dtex Systems
 ### Product: [DTEX InTERCEPT](../ds_dtex_systems_dtex_intercept.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  15   |   6    |         12         |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  15   |   6    |     12     |      9      |    9    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

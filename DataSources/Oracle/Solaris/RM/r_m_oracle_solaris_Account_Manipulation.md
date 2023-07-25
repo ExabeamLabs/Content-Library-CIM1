@@ -3,9 +3,9 @@ Vendor: Oracle
 ### Product: [Solaris](../ds_oracle_solaris.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  15   |   6    |         12         |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  15   |   6    |     12     |      2      |    2    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

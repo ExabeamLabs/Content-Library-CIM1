@@ -3,9 +3,9 @@ Vendor: oVirt
 ### Product: [oVirt](../ds_ovirt_ovirt.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   3   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   3   |   0    |     1      |      4      |    4    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

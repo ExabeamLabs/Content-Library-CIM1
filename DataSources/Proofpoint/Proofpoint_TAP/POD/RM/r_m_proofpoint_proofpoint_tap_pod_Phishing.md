@@ -3,9 +3,9 @@ Vendor: Proofpoint
 ### Product: [Proofpoint TAP/POD](../ds_proofpoint_proofpoint_tap_pod.md)
 ### Use-Case: [Phishing](../../../../UseCases/uc_phishing.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   1    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   1    |     1      |      5      |    5    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

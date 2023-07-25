@@ -3,9 +3,9 @@ Vendor: Unix
 ### Product: [Unix Auditd](../ds_unix_unix_auditd.md)
 ### Use-Case: [Phishing](../../../../UseCases/uc_phishing.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   2   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   2   |   0    |     1      |     15      |   15    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

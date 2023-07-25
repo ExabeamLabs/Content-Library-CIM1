@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Network Policy Server](../ds_microsoft_network_policy_server.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   6   |   3    |         2          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   6   |   3    |     2      |      2      |    2    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

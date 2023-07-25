@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Exchange](../ds_microsoft_exchange.md)
 ### Use-Case: [Phishing](../../../../UseCases/uc_phishing.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   1    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   1    |     1      |     10      |   10    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

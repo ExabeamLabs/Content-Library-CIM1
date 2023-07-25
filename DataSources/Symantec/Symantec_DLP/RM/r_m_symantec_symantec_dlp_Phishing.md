@@ -3,9 +3,9 @@ Vendor: Symantec
 ### Product: [Symantec DLP](../ds_symantec_symantec_dlp.md)
 ### Use-Case: [Phishing](../../../../UseCases/uc_phishing.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   1    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   1    |     1      |     10      |   10    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

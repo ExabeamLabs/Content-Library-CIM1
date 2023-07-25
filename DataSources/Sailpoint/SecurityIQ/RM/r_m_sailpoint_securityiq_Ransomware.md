@@ -3,9 +3,9 @@ Vendor: Sailpoint
 ### Product: [SecurityIQ](../ds_sailpoint_securityiq.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   0    |     1      |     13      |   13    |
 
 | Event Type | Rules    | Models |
 | ---------- | ---- | ------ |

@@ -3,9 +3,9 @@ Vendor: LastPass
 ### Product: [LastPass](../ds_lastpass_lastpass.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   3   |   1    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   3   |   1    |     1      |      3      |    3    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

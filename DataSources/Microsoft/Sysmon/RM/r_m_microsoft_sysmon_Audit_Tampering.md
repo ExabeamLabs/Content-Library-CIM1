@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Sysmon](../ds_microsoft_sysmon.md)
 ### Use-Case: [Audit Tampering](../../../../UseCases/uc_audit_tampering.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   7   |   0    |         6          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   7   |   0    |     6      |      6      |    6    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

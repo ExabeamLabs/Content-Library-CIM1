@@ -3,9 +3,9 @@ Vendor: Tyco
 ### Product: [CCURE Building Management System](../ds_tyco_ccure_building_management_system.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   3   |   1    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   3   |   1    |     1      |      4      |    4    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

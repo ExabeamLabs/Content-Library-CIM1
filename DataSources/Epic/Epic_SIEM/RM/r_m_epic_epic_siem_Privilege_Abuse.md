@@ -3,9 +3,9 @@ Vendor: Epic
 ### Product: [Epic SIEM](../ds_epic_epic_siem.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   7   |   2    |         3          |      4      |    4    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   7   |   2    |     3      |      5      |    5    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

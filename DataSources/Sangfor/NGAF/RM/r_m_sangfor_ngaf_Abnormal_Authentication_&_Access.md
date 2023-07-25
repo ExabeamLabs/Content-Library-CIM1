@@ -3,9 +3,9 @@ Vendor: Sangfor
 ### Product: [NGAF](../ds_sangfor_ngaf.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   6   |   6    |         1          |      2      |    2    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   6   |   6    |     1      |      3      |    3    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

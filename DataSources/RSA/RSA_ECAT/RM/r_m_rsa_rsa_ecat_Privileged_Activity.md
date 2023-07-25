@@ -3,10 +3,10 @@ Vendor: RSA
 ### Product: [RSA ECAT](../ds_rsa_rsa_ecat.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   0    |     1      |      1      |    1    |
 
-| Event Type     | Rules    | Models |
+| Event Type    | Rules    | Models |
 | ---- | ---- | ------ |
-| security-alert | <b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive |        |
+| failed-physical-access | <b>T1078 - Valid Accounts</b><br> ↳ <b>FPA-DU</b>: Failed badge access by disabled user |        |

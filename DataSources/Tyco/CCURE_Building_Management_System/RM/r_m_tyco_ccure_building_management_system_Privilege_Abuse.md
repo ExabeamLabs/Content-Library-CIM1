@@ -3,9 +3,9 @@ Vendor: Tyco
 ### Product: [CCURE Building Management System](../ds_tyco_ccure_building_management_system.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   6   |   2    |         2          |      2      |    2    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   6   |   2    |     2      |      4      |    4    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

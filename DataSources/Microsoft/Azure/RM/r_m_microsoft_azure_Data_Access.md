@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Azure](../ds_microsoft_azure.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  64   |   34   |         4          |      8      |    8    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  64   |   34   |     4      |     29      |   29    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

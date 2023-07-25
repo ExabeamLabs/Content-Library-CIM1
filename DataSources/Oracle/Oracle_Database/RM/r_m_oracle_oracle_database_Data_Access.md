@@ -3,9 +3,9 @@ Vendor: Oracle
 ### Product: [Oracle Database](../ds_oracle_oracle_database.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  18   |   10   |         1          |      2      |    2    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  18   |   10   |     1      |      7      |    7    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

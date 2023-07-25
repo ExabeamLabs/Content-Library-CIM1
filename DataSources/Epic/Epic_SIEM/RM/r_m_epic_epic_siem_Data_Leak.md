@@ -3,9 +3,9 @@ Vendor: Epic
 ### Product: [Epic SIEM](../ds_epic_epic_siem.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   3   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   3   |   0    |     1      |      5      |    5    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

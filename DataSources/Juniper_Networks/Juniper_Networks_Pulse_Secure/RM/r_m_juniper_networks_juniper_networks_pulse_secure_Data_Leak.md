@@ -3,9 +3,9 @@ Vendor: Juniper Networks
 ### Product: [Juniper Networks Pulse Secure](../ds_juniper_networks_juniper_networks_pulse_secure.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  14   |   11   |         6          |      2      |    2    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  14   |   11   |     6      |      7      |    7    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

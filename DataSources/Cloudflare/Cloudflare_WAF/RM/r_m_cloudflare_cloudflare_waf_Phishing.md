@@ -3,9 +3,9 @@ Vendor: Cloudflare
 ### Product: [Cloudflare WAF](../ds_cloudflare_cloudflare_waf.md)
 ### Use-Case: [Phishing](../../../../UseCases/uc_phishing.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   4   |   0    |         5          |      2      |    2    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   4   |   0    |     5      |      4      |    4    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |
