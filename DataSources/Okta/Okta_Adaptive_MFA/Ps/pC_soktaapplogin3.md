@@ -4,6 +4,11 @@
 Name = s-okta-app-login-3
   DataType = "app-login"
   Conditions = [ """"eventType": "policy.evaluate_sign_on"""" ]
+  Fields = ${OktaParserTemplates.s-okta-app-login.Fields}[
+    """"country":\s{0,100}"({location_country}[^"]{1,2000})""",
+    """"state":\s{0,100}"({location_state}[^"]{1,2000})""",
+    """"city":\s{0,100}"({location_city}[^"]{1,2000})""",
+  ]
 
 s-okta-app-login = {
   Vendor = Okta
@@ -19,9 +24,9 @@ s-okta-app-login = {
     """"request":\s{0,100}\{[^\}]{1,2000}?"ip":\s{0,100}"({src_ip}[a-fA-F:\d.]{1,2000})"""",
     """"type":\s{0,100}"({app}[^"]{1,2000})""",
     """({app}Okta)""",
-    """destinationServiceName({app}.+?)\s{0,100}\w+=""",
+    """requestClientApplication=({app}.+?)\s{0,100}\w+=""",
     """"target":\s{0,100}\[.*?\{.*?"displayName":\s{0,100}"({app}[^"]{1,2000})"[^\{\}]{0,2000}?"type":\s{0,100}"AppInstance"""",
-    """"type":\s{0,100}"AppInstance"[^\}\]]{0,2000}"displayName":\s{0,100}"({app}[^"]{1,2000}?)\s{0,100}"""",
+    """"type":"AppInstance"[^\}\]]{0,2000}"displayName":"({app}[^"]{1,2000}?)\s{0,100}"""",
     """"actor":\s{0,100}\{[^\{\}]{0,2000}?"displayName":\s{0,100}"((?i)okta[^"]{0,2000}|unknown|({user_fullname}[^",]{1,2000}))"[^\{\}]{0,2000}?"type":\s{0,100}"User"""",
     """"actor":\s{0,100}\{[^\{\}]{0,2000}?"type":\s{0,100}"User"[^\{\}]{0,2000}?"displayName":\s{0,100}"((?i)okta[^"]{0,2000}|unknown|({user_fullname}[^",]{1,2000}))"""",
     """"actor"":\s{0,100}\{[^\{\}]{0,2000}?""type"":\s{0,100}""User""[^\{\}]{0,2000}?""displayName"":\s{0,100}""((?i)okta[^"]{0,2000}|unknown|({user_lastname}[^,]{1,2000}),\s{0,100}({user_firstname}[^,"\}\]]{1,2000}))""""
@@ -34,7 +39,6 @@ s-okta-app-login = {
     """"city":\s{0,100}"({location_city}[^"]{1,2000})""",
     """"state":\s{0,100}"({location_state}[^"]{1,2000})""",
     """"country":\s{0,100}"({location_country}[^"]{1,2000})"""
-    """"dtHash":"({md5}[^"]{1,2000})"""
   ]
     DupFields=["app->object"
 }

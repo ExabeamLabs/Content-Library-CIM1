@@ -3,10 +3,10 @@ Vendor: AssetView
 ### Product: [AssetView](../ds_assetview_assetview.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   2   |   0    |     2      |      5      |    5    |
 
-| Event Type     | Rules    | Models |
-| ---- | ---- | ------ |
-| print-activity | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User |        |
+| Event Type     | Rules                                                                                                                                                                              | Models |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| print-activity | <b>T1110 - Brute Force</b><br> ↳ <b>PR-SRC-CODE</b>: Printed document with source code file extension<br><br><b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User |        |

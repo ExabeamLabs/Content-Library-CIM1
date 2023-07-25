@@ -3,10 +3,10 @@ Vendor: Zscaler
 ### Product: [Zscaler Private Access](../ds_zscaler_zscaler_private_access.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   1   |   1    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   2   |   0    |     1      |      2      |    2    |
 
-| Event Type | Rules    | Models    |
-| ---------- | ---- | ---- |
-| vpn-logout | <b>T1110 - Brute Force</b><br> ↳ <b>APP-UFL-COUNT</b>: Abnormal number of failed application logins for user |  • <b>APP-UFL-COUNT</b>: Count of failed application logins in a session |
+| Event Type      | Rules                                                                                                                                                                                      | Models |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| process-created | <b>T1003 - OS Credential Dumping</b><br> ↳ <b>A-CreateMiniDump-Hacktool</b>: CreateMiniDump Hacktool detected on this asset.<br> ↳ <b>CreateMiniDump-Hacktool</b>: CreateMiniDump Hacktool |        |

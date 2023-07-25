@@ -3,10 +3,10 @@ Vendor: Red Canary
 ### Product: [Red Canary](../ds_red_canary_red_canary.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|   4   |   0    |         1          |      1      |    1    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   4   |   2    |     1      |      1      |    1    |
 
-| Event Type     | Rules    | Models |
-| ---- | ---- | ------ |
-| security-alert | <b>T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools</b><br> ↳ <b>A-ALERT-DL</b>: DL Correlation rule alert on asset<br> ↳ <b>A-ALERT-Correlation-Rule</b>: Correlation rule alert on asset<br> ↳ <b>ALERT-Correlation-Rule</b>: Correlation rule alert on asset accessed by this user<br> ↳ <b>ALERT-DL</b>: DL Correlation rule alert on asset accessed by this user |        |
+| Event Type          | Rules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Models                                                                                                                                |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| web-activity-denied | <b>T1071.001 - Application Layer Protocol: Web Protocols</b><br> ↳ <b>A-NETF-HCountry-Outbound-WEB-F</b>: First failed web browsing connection to this country from asset<br> ↳ <b>A-NETF-HCountry-Outbound-WEB-A</b>: Web browsing connection to abnormal country for asset has failed<br> ↳ <b>A-NETF-OCountry-Outbound-WEB-F</b>: First failed web browsing connection to this country from organization<br> ↳ <b>A-NETF-OCountry-Outbound-WEB-A</b>: Web browsing connection to abnormal country for the organization has failed |  • <b>A-NET-OCountry-Outbound</b>: Outbound country per organization<br> • <b>A-NET-HCountry-Outbound</b>: Outbound country per asset |

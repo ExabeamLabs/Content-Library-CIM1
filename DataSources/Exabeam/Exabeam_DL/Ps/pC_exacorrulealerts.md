@@ -13,13 +13,13 @@ Name = exa-cor-rule-alerts
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """(?:\W|")exa_rawEventTime(:|=)"{0,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)\s({host}[^\s]{1,2000})\sExabeam\s""",
-    """query_key_value:\s{1,20}({user}[^\|\s]{1,2000})\s{1,20}\|""",
     """(?:\W|")user"{0,20}(:|=)\\?"{0,20}\s{0,100}({user}[^"|]{1,2000}?)\s{0,100}(?:\||\\?")""",
     """(?:\W|")host"{0,20}(:|=)\\?"{0,20}\s{0,100}({host}[^"|]{1,2000}?)\s{0,100}(?:\||\\?")""",
+    """(?:\W|")query_key_value"{0,20}(:|=)"{0,20}\s{0,100}({malware_url}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")compare_key_value"{0,20}(:|=)"{0,20}\s{0,100}({additional_info}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")cardinality_field_value"{0,20}(:|=)"{0,20}\s{0,100}({additional_info}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")exa_rule_id"{0,20}(:|=)"{0,20}\s{0,100}({alert_id}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
-    """(?:\W|")exa_rule_severity"{0,20}(:|=)"{0,20}\s{0,100}({alert_severity}[^"|]{1,2000}?)(AlertSeverity)?\s{0,100}(?:\||")""",
+    """(?:\W|")exa_rule_severity"{0,20}(:|=)"{0,20}\s{0,100}({alert_severity}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")exa_rule_category"{0,20}(=|:)"{0,20}\s{0,100}({alert_type}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")exa_rule_name"{0,20}(:|=)"{0,20}\s{0,100}({alert_name}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")src(_ip)?"{0,20}(:|=)"{0,20}\s{0,100}({src_ip}[a-fA-F:\d.]{1,2000})\s{0,100}(?:\||"|\s{1,100}\w+=)""",
@@ -35,7 +35,6 @@ Name = exa-cor-rule-alerts
     """exa_addRiskToUser(=|:){0,100}"{0,100}({add_risk_to_user}\w{1,2000})""",
     """exa_addRiskToAsset(=|:){0,100}"{0,100}({add_risk_to_asset}\w{1,2000})"""
   ]
-  DupFields = ["risk_score->score"]
   SOAR {
     IncidentType = "ueba"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "top_reasons->uebaRiskReasons","dl_exa_link_alert->uebaSessionLink", "user->uebaUserId", "risk_score->uebaSessionRiskScore", "rule_description->description", "alert_severity->sourceSeverity", "alert_id->sourceId"]
