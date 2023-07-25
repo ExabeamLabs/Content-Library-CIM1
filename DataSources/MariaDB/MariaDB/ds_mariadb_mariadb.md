@@ -2,17 +2,13 @@ Vendor: MariaDB
 ===============
 Product: MariaDB
 ----------------
-| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
-|:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  18   |   10   |         1          |      2      |    2    |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   0   |   0    |     0      |      5      |    5    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
-|:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  database-login<br> ↳[mariadb-connect-1](Ps/pC_mariadbconnect1.md)<br> ↳[mariadb-connect](Ps/pC_mariadbconnect.md)<br><br> database-query<br> ↳[mariadb-query](Ps/pC_mariadbquery.md)<br> | T1213 - Data from Information Repositories<br> | [<ul><li>18 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_mariadb_mariadb_Compromised_Credentials.md) |
-|    [Data Access](../../../UseCases/uc_data_access.md)    |  database-login<br> ↳[mariadb-connect-1](Ps/pC_mariadbconnect1.md)<br> ↳[mariadb-connect](Ps/pC_mariadbconnect.md)<br><br> database-query<br> ↳[mariadb-query](Ps/pC_mariadbquery.md)<br> | T1213 - Data from Information Repositories<br> | [<ul><li>18 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_mariadb_mariadb_Data_Access.md)    |
+|  Use-Case  | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | MITRE TTP | Content                                            |
+|:----------:| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | -------------------------------------------------- |
+| Enrichment |  database-access<br> ↳ [mariadb-read](Parsers/parserContent_mariadb-read.md)<br><br> database-delete<br> ↳ [mariadb-drop](Parsers/parserContent_mariadb-drop.md)<br><br> database-login<br> ↳ [mariadb-connect](Parsers/parserContent_mariadb-connect.md)<br><br> database-query<br> ↳ [mariadb-query](Parsers/parserContent_mariadb-query.md)<br><br> database-update<br> ↳ [mariadb-write](Parsers/parserContent_mariadb-write.md)<br> ↳ [mariadb-alter](Parsers/parserContent_mariadb-alter.md)<br> ↳ [mariadb-create](Parsers/parserContent_mariadb-create.md)<br> |           | [](Rules_Models/r_m_mariadb_mariadb_Enrichment.md) |
 
-MITRE ATT&CK® Framework for Enterprise
---------------------------------------
-| Initial Access | Execution | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection                                                                              | Command and Control | Exfiltration | Impact |
-| -------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | --------------------------------------------------------------------------------------- | ------------------- | ------------ | ------ |
-|                |           |             |                      |                 |                   |           |                  | [Data from Information Repositories](https://attack.mitre.org/techniques/T1213)<br><br> |                     |              |        |
+ATT&CK Matrix for Enterprise
+----------------------------
