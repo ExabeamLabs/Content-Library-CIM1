@@ -1,50 +1,17 @@
-
 ![Exabeam](https://user-images.githubusercontent.com/57500390/233129963-f6395c81-5c85-458c-b526-368de7b82aae.svg)
 
-
-# Exabeam Content Library
+# Exabeam Content Library - AA i55 (c2010.6)
 Welcome to the Exabeam Content Library.
 
 The Content Library is an online repository of knowledge and content that organizations can use to learn about available log source integrations and security use cases.
 
-This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repository, the Content Library is automatically updated to provide fast and easy access &ast;.
+This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repository, the Content Library is automatically updated to provide fast and easy access.
 
-&ast; If you are using Advanced Analytics i63 or later, see the [Content Library based on the Common Information Model](https://github.com/ExabeamLabs/Content-Library-CIM2).
+### [Content "c2010.6" branch - shipped with Advanced Analytics i55]
+- [Exabeam supported use cases](Exabeam%20Use%20Cases.md)
+  - Navigating from Exabeam use case to data source
+- [Exabeam supported data sources](Exabeam%20Data%20Sources.md)
+  - Navigating from data source to use case
 
-|Branch|Version|Content|MITRE ATT&CK®|Release Note|
-|--|--|--|--|--|
-|master|canary|[Data Sources](Exabeam%20Data%20Sources.md), [Use Cases](Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/master/resources/mitre_map.json)|
-|c2206.2_62.5|i62.5|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2206.2_62.5/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2206.2_62.5/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2206.2_62.5/resources/mitre_map.json)|[Release Notes](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2206.2_62.5/ReleaseNotes/ReleaseNotes_c2206.2_62.5.md)|
-|c2206.2|i62.4|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2206.2/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2206.2/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2206.2/resources/mitre_map.json)|[Release Notes](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2206.2/ReleaseNotes/ReleaseNotes_c2206.2.md)|
-|c2204.3|i62.3|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2204.3/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2204.3/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2204.3/resources/mitre_map.json)|[Release Notes](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2204.3/ReleaseNotes/ReleaseNotes_c2204.3.md)|
-|c2112.2|i62.1 & i62.2|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2112.2/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2112.2/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2112.2/resources/mitre_map.json)|[Release Notes](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2112.2/ReleaseNotes/ReleaseNotes_c2112.2.md)|
-|c2110.2|i61|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2110.2/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2110.2/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2110.2/resources/mitre_map.json)|[Release Notes](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2110.2/ReleaseNotes/ReleaseNotes_c2110.2.md)|
-|c2109.2|i60|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2109.2/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2109.2/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2109.2/resources/mitre_map.json)|[Release Notes](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2109.2/ReleaseNotes/ReleaseNotes_c2109.2.md)|
-|c2108.2|i59|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2108.2/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2108.2/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2108.2/resources/mitre_map.json)|[Release Notes](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2108.2/ReleaseNotes/ReleaseNotes_c2108.2.md)|
-|c2106.2|i58|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2106.2_I58/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2106.2_I58/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2106.2_I58/resources/mitre_map.json)|[Release Notes](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2106.2_I58/ReleaseNotes/ReleaseNotes_c2106.2.md)|
-|c2105.2|i57|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2105.2_I57/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2105.2_I57/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2105.2_I57/resources/mitre_map.json)|[Release Notes](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2105.2_I57/ReleaseNotes/ReleaseNotes_c2105.2.md)|
-|c2102.5|i56|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2102.5/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2102.5/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2102.5/resources/mitre_map.json)|[Release Notes](https://github.com/ExabeamLabs/Content-Library-CIM1/blob/c2102.5/ReleaseNotes/ReleaseNotes_c2102.5.md)|
-|c2010.6|i55|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/tree/c2010.6/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/tree/c2010.6/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2010.6/resources/mitre_map.json)|
-|c2006.4|i54|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/tree/c2006.4/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/tree/c2006.4/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2006.4/resources/mitre_map.json)|
-|c2002|i53|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/tree/c2002/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/tree/c2002/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c2002/resources/mitre_map.json)|
-|c1907|i52|[Data Sources](https://github.com/ExabeamLabs/Content-Library-CIM1/tree/c1907/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Library-CIM1/tree/c1907/Exabeam%20Use%20Cases.md)|[Coverage Map](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Library-CIM1/c1907/resources/mitre_map.json)|
 
-## How do I use it?
-The Content Library provides navigation from an Exabeam supported data source to a use case (or use case to data source) showing the event types and parsers for each.
-
-The Content Library currently allows browsing Exabeam content branches: 
- - "master" branch: The master repository with the latest content developed by the Exabeam content team
- - "cxxxx" branches: Out-of-the-box content that was shipped with major Advanced Analytics releases
-
-Browse the specific branches to see the documentation for the content that is available in the product today or browse the master repository for a peek into what is coming next ("canary" content). Note that the content in the master may not be fully tested as of yet and should be used carefully. 
-
-## How can it help me?
-The Content Library helps answer some of the most frequently asked questions regarding Exabeam's rich security content:
-
- - What use cases does Exabeam content support out of the box?
-   - What are the data sources that can be used to get that content to function? 
-   - What are the components of Exabeam content that enable that use case?
-
- - What data sources does Exabeam support out of the box?
-   - What use case(s) does that content enable?
-   - What are the components of Exabeam content that are enabled by a data source integration?
+NOTE: These use cases have been deprecated and changed in future versions.
