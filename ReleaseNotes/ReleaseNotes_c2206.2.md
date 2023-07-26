@@ -1,7 +1,7 @@
- Security Content c2206.2 Release Notes
+ Security Content c2206.2 (i62.4) Release Notes
 =======================================
 
-These Release Notes document security content updates from content package c2204.3 to c2206.2.
+These Release Notes document security content updates from content package c2204.3 (i62.3) to c2206.2 (i62.4).
 
 The security content updates listed below include changes to the following areas:
 
