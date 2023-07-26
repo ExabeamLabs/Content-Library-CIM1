@@ -1,7 +1,7 @@
- Security Content i62.3 Release Notes
+ Security Content c2204.3 (i62.3) Release Notes
 =======================================
 
-These Release Notes document security content updates from content package c2112.2 which is included with Advanced Analytics i62.3. The Release Notes show the updates to content as compared to the previous content package c2204.3 which was released in i62.2.
+These Release Notes document security content updates from content package c2112.2 (i62.1 & i62.2) to c2204.3 (i62.3).
 
 The security content updates listed below include changes to the following areas:
 
