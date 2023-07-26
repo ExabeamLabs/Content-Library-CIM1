@@ -1,7 +1,7 @@
- Security Content c2105.2 Release Notes
+ Security Content c2105.2 (i57) Release Notes
 =======================================
 
-These Release Notes document security content updates from content package c2102.5 to c2105.2.
+These Release Notes document security content updates from content package c2102.5(i56) to c2105.2 (i57).
 
 The security content updates listed below include changes to the following areas:
 
