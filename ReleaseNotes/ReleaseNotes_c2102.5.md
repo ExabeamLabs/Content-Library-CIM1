@@ -1,7 +1,7 @@
- Security Content c2102.5 Release Notes
+ Security Content c2102.5 (i56) Release Notes
 =======================================
 
-These Release Notes document security content updates from content package c2010.6 to c2102.5.
+These Release Notes document security content updates from content package c2010.6 (i55) to c2102.5 (i56).
 
 The security content updates listed below include changes to the following areas:
 
