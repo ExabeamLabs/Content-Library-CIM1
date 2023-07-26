@@ -1,7 +1,7 @@
- Security Content c2108.2 Release Notes
+ Security Content c2108.2 (i59) Release Notes
 =======================================
 
-These Release Notes document security content updates from content package c2106.2 to c2108.2.
+These Release Notes document security content updates from content package c2106.2 (i58) to c2108.2 (i59).
 
 The security content updates listed below include changes to the following areas:
 
