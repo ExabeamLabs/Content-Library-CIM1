@@ -1,7 +1,7 @@
- Security Content c2112.2 Release Notes
+ Security Content c2112.2 (i62.1 & i62.2) Release Notes
 =======================================
 
-These Release Notes document security content updates from content package c2110.2 to c2112.2.
+These Release Notes document security content updates from content package c2110.2 (i61) to c2112.2 (i62.1 & i62.2).
 
 The security content updates listed below include changes to the following areas:
 
