@@ -1,7 +1,8 @@
- Security Content c2110.2 Release Notes
+ Security Content c2110.2 (i61) Release Notes
 =======================================
 
-These Release Notes document security content updates from content package c2109.2 to c2110.2.
+These Release Notes document security content updates from content package c2109.2 (i60) to c2110.2 (i61).
+
 
 The security content updates listed below include changes to the following areas:
 
