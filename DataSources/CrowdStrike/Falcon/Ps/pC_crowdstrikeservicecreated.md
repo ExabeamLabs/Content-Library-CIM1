@@ -18,7 +18,8 @@ Name = crowdstrike-service-created
     """"UserName":\s{0,100}"((LOCAL SERVICE|({user_fullname}({user_firstname}[^\s"]{1,2000})\s({user_lastname}[^"]{1,2000})))|({user}[^"\s]{1,2000}))"""",
     """src-account-name":\s{0,100}"({account_name}[^"]{1,2000})""",
     """"ImageFileName":\s{0,100}"[\\\?]{1,200}(|({process}({directory}[^"]{0,2000}?)(\\+({process_name}[^"\\]{1,2000}?))?))"""",
-    """"aid":\s{0,100}"({aid}[^"]{1,2000})""""
+    """"aid":\s{0,100}"({aid}[^"]{1,2000})"""",
+    """"cid":"({cid}[^"]{1,2000})"""
   ]
   DupFields = [ "directory->process_directory" ]
 

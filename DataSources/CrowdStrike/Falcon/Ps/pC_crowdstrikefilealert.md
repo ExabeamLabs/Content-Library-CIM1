@@ -19,6 +19,7 @@ Name = crowdstrike-file-alert
     """"SHA256HashData":"({new_hash}[^"]{1,2000})""",
     """"ImageFileName":"({file_path}[^"]{1,2000})""",
     """"ImageFileName":"({file_parent}[^"]{0,2000}[\\\/]{1,2000})({file_name}[^\\\/"]{1,2000}?\.({file_ext}[^\\\.\s"]{1,2000})?)"""",
+    """"cid":"({cid}[^"]{1,2000})"""
   ]
   DupFields = [ "alert_name->alert_type" ]
 

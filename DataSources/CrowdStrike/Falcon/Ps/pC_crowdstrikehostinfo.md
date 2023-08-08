@@ -15,7 +15,8 @@ Name = crowdstrike-host-info
       """"event_simpleName":"({event_code}[^"]{1,2000})""",
       """suser=(system|({user}[^\s]{1,2000}))""",
       """"MachineDomain":"({domain}[^"]{1,2000})"""",
-      """"aip":"({src_ip}[A-Fa-f\d\.:]{1,2000})""""
+      """"aip":"({src_ip}[A-Fa-f\d\.:]{1,2000})"""",
+      """"cid":"({cid}[^"]{1,2000})"""
     ]
     DupFields = [ "dest_host->host" ] 
   

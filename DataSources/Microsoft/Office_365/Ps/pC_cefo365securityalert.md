@@ -15,6 +15,7 @@ Name = cef-o365-security-alert
     """({alert_type}({alert_name}graph-identity-protection-risk-detection))"""
     """"source":"(generic|({alert_type}[^"]{1,2000}))"""",
     """"riskType":"(generic|({alert_name}[^"]{1,2000}))"""",
+    """"id":"({alert_id}[^"]+)""""
     """"requestId":"({alert_id}[^"]{1,2000})"""",
     """"riskLevel":"({alert_severity}[^"]{1,2000})"""",
     """"riskType":"({threat_category}[^"]{1,2000})"""",

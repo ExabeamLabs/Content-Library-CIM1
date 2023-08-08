@@ -6,6 +6,7 @@ Name = crowdstrike-win-task-created
   Conditions = [ """"event_simpleName":"ScheduledTaskRegistered""", """"event_platform":"Win""""]
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
     """"TaskName":"({task_name}[^"]{1,2000})"""
+    """"cid":"({cid}[^"]{1,2000})"""
   ]
 
 cef-crowdstrike-app-activity-temp = {

@@ -30,7 +30,8 @@ crowdstrike-file-operations = {
       """UserName":"(({user_fullname}({user_firstname}[^\s"]{1,2000})\s({user_lastname}[^"]{1,2000}))|({user}[^"\s]{1,2000}))"""",
       """"ContextProcessId":"({process_guid}[^"]{1,2000})"""",
       """"aip":"({aip}[a-fA-F\d:.]{1,2000})"""",
-      """"Size":"({bytes}\d{1,20})""""
+      """"Size":"({bytes}\d{1,20})"""",
+      """"cid":"({cid}[^"]{1,2000})"""
     
 }
 ```

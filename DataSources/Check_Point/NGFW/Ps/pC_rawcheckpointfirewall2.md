@@ -54,7 +54,7 @@ checkpoint-firewall-1 = {
     """\Wdst_machine_name:"({dest_host}[^"@]{1,2000})@({domain}[^"]{1,2000})""",
     """\Wuser:"({user}[^"\(\)@]{1,2000}?)\s{0,100}"""",
     """\Wuser:"({user_email}[^\(\)"@]{1,2000}@[^\(\)"@]{1,2000})\s{0,100}"""",
-    """\Wsrc_user_name:"(({user}[^"\(\)@]{1,2000}?)|({user_email}[^"@\(\)]{1,2000}@[\(\)^"@]{1,2000}))\s{0,100}"""",
+    """\Wsrc_user_name:"(({user}[^"\(\)@]{1,2000}?)|({user_email}[^"@\(\)]{1,2000}@[^"@\(\)]{1,2000}))\s{0,100}"""",
     """\Wdst_user_name:"(({user}[^"\(\)@]{1,2000}?)|({user_email}[^"@]{1,2000}@[^"@]{1,2000}))\s{0,100}"""",
     """\Wuser:"({user_lastname}[^,"]{1,2000}),\s{0,100}({user_firstname}[\w\s]{1,2000}\S)\s{0,100}\(({account}[^"]{1,2000}?)\)""",
     """\Wuser:"({user_firstname}[\w\s]{1,2000}[^\s,\(])\s{1,100}({user_lastname}[^\s,\(]{1,2000})\s{0,100}\(({account}[^"]{1,2000}?)\)""",
@@ -64,7 +64,8 @@ checkpoint-firewall-1 = {
     """\Wsent_bytes:"({bytes_out}\d{1,100})""",
     """\Wifname:"({interface_name}[^"]{1,2000})""",
     """\W(user|src_user_name|dst_user_name):"(?:[^_"\s]{1,2000}_)?(({user_email}[^:@\s]{1,2000}@[^\.\s]{1,2000}\.[^:\s]{1,2000})|({user}[^"\s]{1,2000}?))\s{0,100}"""",
-    """resource:"({full_url}[^";,]{1,2000})""""
+    """resource:"({full_url}[^";,]{1,2000})"""",
+    """ dns_query:"({query}[^"]{1,2000}?)\s{0,100}""""
   ]
   DupFields = [ "action->outcome" 
 }

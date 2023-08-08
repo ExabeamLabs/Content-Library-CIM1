@@ -8,7 +8,7 @@ Product: Armis
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP          | Content    |
 |:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  alert-iot<br> ↳[armis-alert-iot](Ps/pC_armisalertiot.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_armis_armis_Compromised_Credentials.md) |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  alert-iot<br> ↳[armis-alert-iot](Ps/pC_armisalertiot.md)<br> ↳[armis-alert-iot-1](Ps/pC_armisalertiot1.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_armis_armis_Compromised_Credentials.md) |
 
 MITRE ATT&CK® Framework for Enterprise
 --------------------------------------

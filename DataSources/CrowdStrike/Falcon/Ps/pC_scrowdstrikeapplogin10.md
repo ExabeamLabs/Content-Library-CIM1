@@ -6,7 +6,8 @@ Name = s-crowdstrike-app-login-10
   Conditions = [ """"EventType":""", """"Event_AuthActivityAuditEvent"""", """"OperationName":""", """"saml2Assert"""" ]
   Fields =  ${CrowdStrikeParserTemplates.s-crowdstrike-app-login.Fields} [
     """"timestamp":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-    """"OperationName":\s{0,100}"({event_name}[^"]{1,2000})"""
+    """"OperationName":\s{0,100}"({event_name}[^"]{1,2000})""",
+    """"cid":"({cid}[^"]{1,2000})"""
  ]
 
 s-crowdstrike-app-login = {

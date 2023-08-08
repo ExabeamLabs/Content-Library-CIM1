@@ -25,6 +25,7 @@ Name = crowdstrike-logon
       """"aid":"({aid}[^"]{1,2000})""",
       """"event_simpleName":"({event_code}[^"]{1,2000})""",
       """"LogonDomain":"(NT AUTHORITY|({domain}[^"]{1,2000}))""",
+      """"cid":"({cid}[^"]{1,2000})"""
     ]
     DupFields = ["user->account"]
   

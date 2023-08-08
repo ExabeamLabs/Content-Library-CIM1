@@ -29,6 +29,7 @@ Name = crowdstrike-security-alert-2
       """"CommandLine"{1,20}:"{1,20}\\*"{0,20}({process}({directory}[^",]{1,2000}\\\\)?({process_name}[^"\\,]{1,2000}))\\*"""",
       """"LocalIP":"({src_ip}[a-fA-F\d.:]{1,2000})""",
       """"RemoteAddress":"({dest_ip}[a-fA-F\d.:]{1,2000})""",
+      """"IOCValue":\s{0,100}"(({dest_ip}((([0-9a-fA-F.]{0,4}):{1,2}){1,7}([0-9a-fA-F]){1,4})|(((25[0-5]|(2[0-4]|1\d|[0-9]|)\d)\.?\b){4}))|({domain}[^"]{1,2000}))""""
       """"Technique":"({alert_type}[^"]{1,2000})""",
       """"LocalAddress":"({src_ip}[a-fA-F\d.:]{1,2000})""",
       """"DetectId"{1,20}:"{1,20}({alert_id}[^"]{1,2000})"""",

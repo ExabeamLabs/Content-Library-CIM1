@@ -15,6 +15,7 @@ Name = crowdstrike-security-alert-4
       """"InjectedDll":"({malware_file_name}[^"]{1,2000})""",
       """"event_simpleName":"({alert_name}[^"]{1,2000})""",
       """"id":"({alert_id}[^"]{1,2000})""",
+      """"cid":"({cid}[^"]{1,2000})"""
     ]
     DupFields = [ "alert_name->alert_type","alert_name->event_code" ]
   

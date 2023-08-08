@@ -10,6 +10,7 @@ Name = crowdstrike-usb-connect
   """"event_simpleName":"({activity_details}[^"]{1,2000})"""
   """"DeviceInstanceId":"({device_id}[^"]{1,2000})"""
   """"DevicePropertyDeviceDescription":"({device_type}[^"]{1,2000}?)\s{0,100}""""
+  """"cid":"({cid}[^"]{1,2000})"""
   ]
 
 cef-crowdstrike-app-activity-temp = {

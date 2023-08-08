@@ -12,6 +12,8 @@ Name = json-o365-dlp-email
     """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|cc|({host}[\w\-.]{1,2000}))""",
     """"StartDate":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
     """"StartDate":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
+    """"Date":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
+    """"Received":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
     """"Subject":"\s{0,100}(|({subject}[^=]{1,2000}?))\s{0,100}","\w+?":""",
     """"Direction":"({direction}[^"]{1,2000})"""",
     """"SenderAddress":"({sender}[^",]{1,2000})"""",
@@ -25,6 +27,7 @@ Name = json-o365-dlp-email
     """"MessageTraceId":"({message_id}[^"]{1,2000})"""",
     """"triggered-by":\{"user-email":"({user_email}[^",]{1,2000})"""",
     """Category\s{1,100}\[({category}[^\]]{1,2000})\]"""
+    """"Action":"({action}[^"]{1,2000})"""
   ]
   DupFields = [ "alert_type->alert_name" ,"sender->orig_user"]
 

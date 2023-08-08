@@ -22,7 +22,7 @@ Name = netskope-network-connection
       """"{1,20}src_country"{1,20}:\s{0,100}"{1,20}({country_code}[^",]{1,2000})""",
       """"srcip":\s{0,100}"({src_translated_ip}[A-Fa-f:\d.]{1,2000})"""",
       """"{1,20}dstip"{1,20}:\s{0,100}"{1,20}({dest_ip}[^",]{1,2000})""",
-      """"policy": "({alert_name}[^",]{1,2000})""",
+      """"policy":\s{0,100}"({alert_name}[^",]{1,2000})""",
       """"{1,20}browser"{1,20}:\s{0,100}"{1,20}({browser}[^",]{1,2000})""",
       """"{1,20}useragent"{1,20}:\s{0,100}"{1,20}({user_agent}[^"]{1,2000})""",
     ]

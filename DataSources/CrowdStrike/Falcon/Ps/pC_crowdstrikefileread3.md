@@ -17,7 +17,8 @@ Name = crowdstrike-file-read-3
       """"TargetFileName":"({file_parent}[^"]{0,2000}[\\\/]{1,2000})\s{0,100}({file_name}[^\\\/"]{1,2000}(\.({file_ext}[^\\\/"]{1,2000})))"""",
       """"TargetFileName":"({file_path}[^"]{1,2000})"""",
       """"FileObject":"({object}[^"]{1,2000})"""",
-      """"aid":"({aid}[^"]{1,2000})""""
+      """"aid":"({aid}[^"]{1,2000})"""",
+      """"cid":"({cid}[^"]{1,2000})"""
     ]
   
 

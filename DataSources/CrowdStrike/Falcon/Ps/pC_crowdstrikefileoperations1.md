@@ -8,6 +8,7 @@ Name = crowdstrike-file-operations-1
   """"id":"({alert_id}[\w-]{1,2000}?)""""
   """"name":"({alert_name}[^"]{1,2000}?)""""
   """"File({activity}Delete|Open|Rename)"""
+  """"cid":"({cid}[^"]{1,2000})"""
   ]
 
 cef-crowdstrike-app-activity-temp = {

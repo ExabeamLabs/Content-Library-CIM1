@@ -21,6 +21,7 @@ cef-microsoft-app-activity = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?(gcs-topic|cc|({host}\S{1,2000}))""",
+    """"activityDateTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d\d\d\d\dZ)""",
     """activityDate":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """env_time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """"CreationTime\\*"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
@@ -40,7 +41,7 @@ cef-microsoft-app-activity = {
     """\ssrc=\[?(::ffff:)?({src_ip}((\d{1,3}\.){3}\d{1,3}|[A-Fa-f\d]{1,2000}:[a-fA-F\d:]{1,2000}))\]?(:({src_port}\d{1,100}))?\s\w+=""",
     """"result":"({result}[^"]{1,2000})""",
     """"ResultStatus":"({result}[^"]{1,2000}?)"""",
-    """\sdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """destinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\ssourceServiceName =(Core Directory|Account Provisioning|({app}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
     """"app"{1,20}:\{[^\}]{1,2000}?"displayName"{1,20}:"{1,20}({app}[^"]{1,2000})"""",
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
@@ -49,7 +50,11 @@ cef-microsoft-app-activity = {
     """"SourceFileName":"({src_file_name}[^",]{1,2000})""",
     """"user":\{[^}]{1,20000}?displayName":"(Microsoft Teams Services|Office 365 SharePoint Online|Office 365 Exchange Online|({user_fullname}[^"]{1,2000}))"""",
     """"result":"failure","resultReason":"({failure_reason}[^"]{1,2000}?)\s{0,100}""""
-    """"UserType":"{0,100}({user_type}[^,]{1,2000})"""
+    """"UserType":"{0,100}({user_type}[^,]{1,2000})""",
+    """"category":"({category}[^"]{1,2000})""",
+    """"operationType":"({activity_type}[^"]{1,2000})""",
+    """"loggedByService":"({service_name}[^"]{1,2000})""",
+    """"value":"({user_agent}[^"]{1,2000})","key":"User-Agent""""
   
 }
 ```

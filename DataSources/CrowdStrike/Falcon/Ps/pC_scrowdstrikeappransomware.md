@@ -7,6 +7,7 @@ Name = s-crowdstrike-app-ransomware
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
   """"id":"({alert_id}[\w-]{1,2000}?)"""",
   """"name":"({alert_name}[^"]{1,2000}?)""""
+  """"cid":"({cid}[^"]{1,2000})"""
   ]
   DupFields = ["file_path->additional_info"]
 

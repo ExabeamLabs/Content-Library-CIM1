@@ -10,6 +10,7 @@ Name = crowdstrike-usb-alert
   """"DeviceProduct":"\s{0,100}(\s{1,20}|({additional_info}[^"]{1,2000}?))\s{0,100}""""
   """"DeviceInstanceId":"({target}[^"]{1,2000})""",
   """"event_simpleName":"({alert_type}[^"]{1,2000})""",
+  """"cid":"({cid}[^"]{1,2000})"""
   
   ]
 

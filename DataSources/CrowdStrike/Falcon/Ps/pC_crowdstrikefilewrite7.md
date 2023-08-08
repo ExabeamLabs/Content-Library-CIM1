@@ -9,6 +9,7 @@ Name = crowdstrike-file-write-7
        """"VolumeName":"({file_parent}[^"]{0,2000}[\\\/]{1,2000})({file_name}[^\\\/"]{1,2000}(\.({file_ext}[^\\\/"]{1,2000}))?)""",
        """"ConfigStateHash":"({old_hash}[^"]{1,2000})""",
        """"SHA256HashData":"({new_hash}[^"]{1,2000})""",
+       """"cid":"({cid}[^"]{1,2000})"""
     ]
   
 crowdstrike-file-operations = {
@@ -33,7 +34,8 @@ crowdstrike-file-operations = {
       """UserName":"(({user_fullname}({user_firstname}[^\s"]{1,2000})\s({user_lastname}[^"]{1,2000}))|({user}[^"\s]{1,2000}))"""",
       """"ContextProcessId":"({process_guid}[^"]{1,2000})"""",
       """"aip":"({aip}[a-fA-F\d:.]{1,2000})"""",
-      """"Size":"({bytes}\d{1,20})""""
+      """"Size":"({bytes}\d{1,20})"""",
+      """"cid":"({cid}[^"]{1,2000})"""
     
 }
 ```

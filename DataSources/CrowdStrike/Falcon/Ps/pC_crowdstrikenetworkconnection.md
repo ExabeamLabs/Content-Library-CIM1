@@ -31,7 +31,8 @@ Name = crowdstrike-network-connection
       """"Protocol":"({protocol}[^"]{1,2000})""",
       """src-account-name":"({account_name}[^"]{1,2000})""",
       """"ContextProcessId":"({process_guid}[^"]{1,2000})"""",
-      """"aip":\s{0,100}"({aip}[^"]{1,2000})""""
+      """"aip":\s{0,100}"({aip}[^"]{1,2000})"""",
+      """"cid":"({cid}[^"]{1,2000})"""
     ]
   
 

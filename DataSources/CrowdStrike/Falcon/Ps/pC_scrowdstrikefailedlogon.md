@@ -19,7 +19,8 @@ Name = s-crowdstrike-failed-logon
     """"aip":\s{0,100}"({aip}[a-fA-F:\d.]{1,2000})"""",
     """"LogonType":"({logon_type}[^"]{1,2000})"""",
     """"name":"({event_name}[^"]{1,2000})"""",
-    """"LogonDomain":"({domain}[^"]{1,2000})""""
+    """"LogonDomain":"({domain}[^"]{1,2000})"""",
+    """"cid":"({cid}[^"]{1,2000})"""
   ]
 
 

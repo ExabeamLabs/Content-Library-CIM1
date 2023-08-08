@@ -23,7 +23,7 @@ cef-cisco-dns-response-sk4-src-template {
     """"responseCode":"({dns_response_code}[^"]{1,2000})"""",
     """"domain":"({query}[^"]{0,2000}?)\.?"""",
     """"categories":\s{0,100}\[({categories}"{0,20}({category}[^"\],]{1,2000})[^\]]{0,2000})\]""",
-    """"externalIp"{1,20}:"{1,20}({src_ip}[^"]{1,2000})"""
+    """"internalIp"{1,20}:"{1,20}({src_ip}[^"]{1,2000})"""
   
 }
 ```

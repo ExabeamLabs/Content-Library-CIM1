@@ -8,6 +8,7 @@ Name = crowdstrike-modify-binary
     """"ServiceImagePath":"({file_path}({file_parent}[^"]{0,2000}?\\+)({file_name}[^\\\s"]{1,2000}?\.({file_ext}[^\\\s"\.]{1,2000}?)))(\s|")"""
     """"ServiceObjectName":"({additional_info}[^"]{1,2000})"""
     """({action}ModifyServiceBinaryV2)"""
+    """"cid":"({cid}[^"]{1,2000})"""
   ]
 
 cef-crowdstrike-app-activity-temp = {

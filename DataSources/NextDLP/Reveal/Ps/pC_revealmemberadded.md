@@ -17,7 +17,7 @@ json-qush-reveal = {
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
     Fields = [
       """"timestamp"{1,10}:\s{0,100}"{1,10}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d{1,10}Z)""""
-      """"host":\s{0,100}\["({host}[\w\-\.]{1,2000})"""
+      """"host":\s{0,100}\["({dest_host}[\w\-\.]{1,2000})"""
       """"agent_hostname":\s{0,100}"({host}[\w\-\.]{1,2000})""""
       """"description"{1,10}:\s{0,100}"{1,10}({additional_info}[^\n]{1,2000}?)\s{0,100}","""
       """"username"{1,10}:\s{0,100}"{1,10}(({user_fullname}[^\\\s"]{1,2000}\s[^"\\]{1,2000})|(({domain}[^"\s\\]{1,2000})\\{1,20})?({user}[^"\s]{1,2000}))","""
@@ -35,6 +35,7 @@ json-qush-reveal = {
       """"destination_port":\s{0,100}\["({dest_port}\d{1,5})"\]""",
       """"source_ip":\s{0,100}\["({src_ip}[a-fA-F\d:\.]{1,2000})"\]""",
       """"source_port":\s{0,100}\["({src_port}\d{1,5})"\]"""
+      """"url":\s{0,100}\["({url}[^"\]]{1,2000})"(,|\])"""
    
 }
 ```
