@@ -21,6 +21,7 @@ Name = oracle-db-login-1
     """COMMENT\$+TEXT:\[\d{1,100}\]\s{0,100}.+?PROTOCOL=({protocol}\w+)""",
     """COMMENT\$+TEXT:\[\d{1,100}\]\s{0,100}.+?HOST=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """COMMENT\$+TEXT:\[\d{1,100}\]\s{0,100}.+?PORT=({dest_port}\d{1,100})""",
+    """ACTION:\[\d{1,100}\]\s{1,100}"{1,10}({db_operation}\d{1,3})""""
   ]
   DupFields = [ "user->os_user" ]
 

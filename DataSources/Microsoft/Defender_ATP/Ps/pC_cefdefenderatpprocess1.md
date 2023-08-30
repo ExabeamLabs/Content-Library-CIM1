@@ -33,7 +33,10 @@ Name = cef-defender-atp-process-1
      """MD5\\?"{1,100}:\\?"{1,100}({md5}[^"]{1,2000}?)\\?"""",
      """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]{1,2000})"""
      """"FolderPath"{1,100}:"{1,100}({process}({directory}(\w:)?(?:[^:\]]{1,2000})?[\\\/])?({process_name}[^\\\/"\]]{1,2000}?))"""",
-     """"AccountDomain":"({domain}[^:]{1,2000}?)",""", 
+     """"AccountDomain":"({domain}[^:]{1,2000}?)",""",
+     """"InitiatingProcessFolderPath":\s{0,100}"({process}(({process_directory}[^"]{1,2000}?)\\{1,20})?({process_name}[^"\\]{1,2000}))"""",
+     """"InitiatingProcessParentFileName":"({parent_process_name}[^"]{1,2000})""",
+     """"InitiatingProcessParentId"{1,20}:({parent_process_id}\d{1,100})""" 
   ]
   DupFields = ["category->event_name", "event_hub_namespace->host"]
 

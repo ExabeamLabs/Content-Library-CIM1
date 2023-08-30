@@ -7,7 +7,7 @@ Name = json-paloalto-ngfw-network-connection
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
-  Conditions = [ """"LogSetting":"CDL"""", """"LogType":"DECRYPTION"""", """"SubType":"start"""", """"FromZone":"""", """"ToZone":"""" ]
+  Conditions = [ """"LogType":"DECRYPTION"""", """"SubType":"start"""", """"FromZone":"""", """"ToZone":"""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)"""",

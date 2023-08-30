@@ -4,7 +4,7 @@ Product: ClientView
 -------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  786  |  162   |        137         |     14      |   14    |
+|  788  |  163   |        137         |     14      |   14    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

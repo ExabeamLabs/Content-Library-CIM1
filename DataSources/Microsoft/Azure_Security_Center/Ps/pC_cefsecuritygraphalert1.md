@@ -30,7 +30,7 @@ json-microsoft-security-events = {
      """"userPrincipalName":\s{0,100}"({user_upn}[^"]{1,2000}?)"""",
      """"domainName"{1,20}:\s{0,100}"{1,20}(-|({domain}[^"]{1,2000}))"""",
      """"domainName"{1,20}:\s{0,100}"{1,20}(-|({domain}[^"]{1,2000}))[^}\]]{1,2000}?userPrincipalName""",
-     """"fqdn"{1,20}:\s{0,100}"{1,20}({src_host}[^"]{1,2000})"""",
+     """"fqdn"{1,20}:\s{0,100}"{1,20}({src_host}[\w\-\.]{1,2000})""",
      """"{1,20}hostStates"{1,20}:[^}\]]{1,2000}?privateIpAddress"{1,20}:\s{0,100}"{1,20}({src_ip}[a-fA-F:\d.]{1,2000})""",
      """"{1,20}hostStates"{1,20}:[^}\]]{1,2000}?publicIpAddress"{1,20}:\s{0,100}"{1,20}({dest_ip}[a-fA-F:\d.]{1,2000})""",
      """"description":\s{0,100}"An actor on\s{0,100}({src_host}\S{1,2000})\s{0,100}performed suspicious""",

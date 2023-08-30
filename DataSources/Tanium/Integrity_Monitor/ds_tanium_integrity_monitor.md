@@ -4,7 +4,7 @@ Product: Integrity Monitor
 --------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  605  |   93   |        123         |      6      |    6    |
+|  607  |   94   |        123         |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

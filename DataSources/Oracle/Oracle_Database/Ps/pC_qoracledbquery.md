@@ -16,6 +16,7 @@ Name = q-oracle-db-query
     """\Wdvchost=({host}[\w\-.]{1,2000})""",
     """\s({host}[\w\-.]{1,2000})(\sjournal)?:?\s{1,100}Oracle Audit""",
     """ACTION\s{1,100}:\[\d{1,100}\]\s{1,100}'({db_query}({db_operation}\w+)\s{0,100}.*?)\s{0,100}'\s{1,100}DATABASE USER:""",
+    """ACTION NUMBER:\[\d{1,100}\]\s{1,100}'({db_operation}\d{1,3})'"?,"""
     """ACTION\s{1,100}:\[\d{1,100}\]\s{1,100}'({db_operation}grant \w+)""",
     """ACTION\s{1,100}:\[\d{1,100}\]\s{1,100}'({db_operation}revoke \w+)""",
     """ACTION\s{1,100}:\[\d{1,100}\]\s{1,100}'({db_operation}alter \w+)""",

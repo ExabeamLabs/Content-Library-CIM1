@@ -50,7 +50,7 @@ MITRE ATT&CK® Framework for Enterprise
 | T1055.001 | [Process Injection: Dynamic-link Library Injection](https://attack.mitre.org/techniques/T1055/001)<br><br>                                                | 2     |
 | T1057     | [Process Discovery](https://attack.mitre.org/techniques/T1057)<br><br>                                                                                    | 6     |
 | T1059     | [Command and Scripting Interperter](https://attack.mitre.org/techniques/T1059)<br><br>                                                                    | 15    |
-| T1059.001 | [Command and Scripting Interperter: PowerShell](https://attack.mitre.org/techniques/T1059/001)<br><br>                                                    | 67    |
+| T1059.001 | [Command and Scripting Interperter: PowerShell](https://attack.mitre.org/techniques/T1059/001)<br><br>                                                    | 69    |
 | T1059.003 | [T1059.003](https://attack.mitre.org/techniques/T1059/003)<br><br>                                                                                        | 23    |
 | T1059.005 | [T1059.005](https://attack.mitre.org/techniques/T1059/005)<br><br>                                                                                        | 9     |
 | T1059.007 | [T1059.007](https://attack.mitre.org/techniques/T1059/007)<br><br>                                                                                        | 6     |

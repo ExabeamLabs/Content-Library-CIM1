@@ -10,7 +10,7 @@ Name = aws-waf-web-activity
   Conditions = [ """"action":"""", """"httpMethod":"""", """"uri":"""", """aws:waf""", """"httpRequest":""", """"name":"user-agent"""" ]
   Fields = [
     """"timestamp":({time}\d{1,13}),""",
-    """\d\d\s\d\d:\d\d:\d\d\s({host}[\w\-\.]{1,2000})""",
+    """\s\d\d\s\d\d:\d\d:\d\d\s({host}[\w\-\.]{1,2000})""",
     """"clientIp":"({src_ip}[a-fA-F\d:\.]{1,2000})"""",
     """"name":"user-agent","value":"({user_agent}[^"]{1,2000})"""",
     """"name":"host","value":"({web_domain}[^"]{1,2000})"""",
@@ -20,7 +20,8 @@ Name = aws-waf-web-activity
     """"httpVersion":"({protocol}[^"]{1,2000})"""",
     """"httpMethod":"({method}[^"]{1,2000})"""",
     """"name":"accept","value":"({mime}[^"]{1,2000})"""",
-    """"AccountName":"({user}[^"]{1,2000})""""
+    """"AccountName":"({user}[^"]{1,2000})"""",
+    """"webaclId":"arn:aws:waf([^:]{1,2000}:){2}({account_id}\d{1,20}):"""
   ]
 
 

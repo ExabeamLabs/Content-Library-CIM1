@@ -15,11 +15,11 @@ Name = cef-okta-member-added
     """"actor":\{[^\}]{0,2000}?"type":"User"[^\}]{0,2000}?"displayName":"({user_fullname}({user_firstname}[^"]{1,2000}?)\s({user_lastname}[^"\s]{1,2000}))"""",
     """"type":"UserGroup"[^\}]{0,2000}?"displayName":"({group_name}[^"]{1,2000})"""",
     """"target":\[[^\]]{0,2000}?"type":"User","alternateId":"({account_id}[^"]{1,2000})"""",
-    """"target":\[[^\]]{0,2000}?"type":"User","alternateId":"(({target_user_email}[^@"]{1,2000}@[^"]{1,2000})|({target_user}[^"]{1,2000}))"""",
+    """"target":\[[^\]]{1,2000}?"type":"User","alternateId":"({account_name}({target_user_email}[^@"]{1,2000}@[^"]{1,2000})|({target_user}[^@"]{1,2000}))"""",
     """"ip":"({src_ip}[a-fA-F\d:.]{1,2000})"""",
     """"outcome":\{"result":"({outcome}[^"]{1,2000})""""
   ]
-  DupFields = [ "outcome->result","target_user->account_name" ]
+  DupFields = [ "outcome->result" ]
 
 
 }

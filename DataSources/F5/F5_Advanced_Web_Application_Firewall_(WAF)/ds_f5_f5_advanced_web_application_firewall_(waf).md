@@ -4,7 +4,7 @@ Product: F5 Advanced Web Application Firewall (WAF)
 ---------------------------------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  709  |  140   |        129         |      7      |    7    |
+|  711  |  141   |        129         |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

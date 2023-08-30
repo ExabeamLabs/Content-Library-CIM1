@@ -4,7 +4,7 @@ Product: Office 365
 -------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  732  |  149   |        130         |     19      |   19    |
+|  734  |  150   |        130         |     19      |   19    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

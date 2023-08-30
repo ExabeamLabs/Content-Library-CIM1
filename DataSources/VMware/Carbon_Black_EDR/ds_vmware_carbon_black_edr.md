@@ -4,7 +4,7 @@ Product: Carbon Black EDR
 -------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  649  |  110   |        126         |     11      |   11    |
+|  651  |  111   |        126         |     11      |   11    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

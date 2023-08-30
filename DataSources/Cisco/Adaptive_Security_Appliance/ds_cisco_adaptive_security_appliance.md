@@ -4,7 +4,7 @@ Product: Adaptive Security Appliance
 ------------------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  776  |  164   |        143         |     13      |   13    |
+|  778  |  165   |        143         |     13      |   13    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |
