@@ -29,7 +29,8 @@ Name = fortinet-web-activity-2
     """\sduser=({user}[^\s]{1,2000})""",
     """\sad.agent=({user_agent}[^=]{1,2000}?)\s{1,100}[\w.]{1,2000}=""",
     """requestContext=({category}[^=]{1,2000}?)\s{1,100}([\w.]{1,2000}=|$)""",
-    """deviceSeverity=({additional_info}[^=]{1,2000}?)\s{1,100}([\w.]{1,2000}=|$)"""
+    """deviceSeverity=({additional_info}[^=]{1,2000}?)\s{1,100}([\w.]{1,2000}=|$)""",
+    """\sad\.profile=({profile}[^=]{1,2000}?)\s\w+="""
   ]
 
 

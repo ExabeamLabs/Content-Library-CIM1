@@ -9,7 +9,7 @@ DataType = "alert"
 TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
 Conditions = [ """CEF:""", """destinationServiceName =Azure""", """cat=security-alert""", """"category":""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":"Azure Advanced Threat Protection""" ]
 Fields = [
-""""eventDateTime":"({time}\d{4}-\d{1,2}-\d{1,2}T\d{1,2}:\d{1,2}:\d{1,2}\.\d{1,6}Z)"""
+""""eventDateTime":"({time}\d{4}-\d{1,2}-\d{1,2}T\d{1,2}:\d{1,2}:\d{1,2}\.\d{1,7}Z)"""
 """act=({action}[^\s]{1,2000})"""
 """"hostStates":\[\{"fqdn":"({host}[\w\-.]{1,2000})"""
 """"category":"({alert_type}[^"]{1,2000})"""
