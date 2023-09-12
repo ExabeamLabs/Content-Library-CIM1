@@ -14,6 +14,7 @@ Name = cef-darktrace
       """exabeam_EventTime=({time}\d{1,100})""",
       """\sdst=({dest_ip}[a-fA-F\d:.]{1,2000})\s\w+=""",
       """\|Darktrace\|DCIP\|[^\|]{1,2000}\|\d{1,100}\|({alert_type}[^\/]{0,2000})\/""",
+      """"severityName":"({alert_severity}[^"]{1,2000})""""
       """\|Darktrace\|DCIP(\|[^\|]{1,2000}){2}\|([^\|]{1,2000}\/)?({alert_name}[^\|\/]{0,2000})\|({alert_severity}\d{1,2})\|""",
       """\s(dvc|src)=(0.0.0.0|({src_ip}[a-fA-F\d:.]{1,2000}))\s""",
       """\d{2}\s({host}[^\s]{0,2000})\s<""",
@@ -23,6 +24,7 @@ Name = cef-darktrace
       """\sdhost=(|({dest_host}[^\s]{0,2000}))\s""",
       """\sdarktraceUrl=({full_url}[^\s]{1,2000})"""
       """dvchost=[^\s]{1,2000}?\s({user_email}[^\s@]{1,2000}\@({email_domain}[^\s]{1,2000}))?"""
+      """"subject":"({subject}.+?)","\w+":""""
    ]
  
 

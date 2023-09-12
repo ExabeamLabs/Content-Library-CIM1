@@ -7,7 +7,7 @@ Name = json-azure-ad-security-alert-2
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
-  Conditions = [ """"category":""", """"Exfiltration"""", """"title":""", """"detectionSource"""", """"serviceSource"""", """"microsoftDataLossPrevention"""", """"Graph Security Alerts"""", """"Azure"""" ]
+  Conditions = [ """"category":""", """"Exfiltration"""", """"title":""", """"detectionSource"""", """"microsoftDataLossPrevention"""", """"severity":""" ]
   Fields = [
     """"id":\s{0,100}"({alert_id}[^"]{1,2000})"""",
     """"title":\s{0,100}"({alert_name}[^"]{1,2000})"""",

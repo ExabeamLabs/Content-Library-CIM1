@@ -7,7 +7,7 @@ Name = paloalto-firewall-traffic-drop-1
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
-  Conditions = [ """"LogType":"TRAFFIC"""", """"Action":"drop"""", """"Subtype":"drop"""", """"Rule":"""" ]
+  Conditions = [ """"LogType":"TRAFFIC"""", """"Action":"drop""", """"Subtype":"drop"""", """"Rule":"""" ]
   Fields = [
   """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,6}Z)"""
   """"host":"({host}[\w\-.]{1,2000})"""

@@ -1,8 +1,9 @@
 #### Parser Content
 ```Java
 {
-Name = json-defender-atp-security-alert-3
-    Conditions = [ """"category":""", """"Discovery"""", """"title":""", """"incidentId":""",  """"detectionSource":""", """"threatFamilyName":""" ]
+Name = json-defender-atp-security-alert-12
+    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
+    Conditions = [ """"category":""", """"InitialAccess"""", """"title":""", """"incidentId":""",  """"detectionSource":""", """"serviceSource":""" ]
   
 json-microsoft-security-events-1 = {
      Vendor = Microsoft
