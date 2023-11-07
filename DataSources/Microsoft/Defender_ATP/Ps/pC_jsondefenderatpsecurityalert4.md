@@ -16,7 +16,7 @@ json-microsoft-security-events-1 = {
      """"severity":\s{0,100}"({alert_severity}[^"]{1,2000})"""",
      """"category":\s{0,100}"({alert_type}[^"]{1,2000})"""",
      """"description":\s{0,100}"({additional_info}[^}\]]{1,2000}?)\s{0,100}"[,\]}]""",
-     """"createdDateTime":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,7}Z)"""",
+     """"createdDateTime":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
      """"firstActivity":\s{0,100}"({time}[^"]{1,2000})"""",
      """"accountName":\s{0,100}"(-|({user_fullname}[^"\s]{1,2000}\s[^"]{1,2000})|({user_email}[^"@]{1,2000}@[^"]{1,2000})|({user}[^\s"]{1,2000}))"""",
      """aadUserId[^}\]]{1,2000}?"accountName":\s{0,100}"(-|({user_fullname}[^"\s]{1,2000}\s[^"]{1,2000})|({user_email}[^"@]{1,2000}@[^"]{1,2000})|({user}[^\s"]{1,2000}))"""",

@@ -25,6 +25,9 @@ Name = cef-darktrace
       """\sdarktraceUrl=({full_url}[^\s]{1,2000})"""
       """dvchost=[^\s]{1,2000}?\s({user_email}[^\s@]{1,2000}\@({email_domain}[^\s]{1,2000}))?"""
       """"subject":"({subject}.+?)","\w+":""""
+      """"from":"({sender}[^"@]{1,2000}@[^\."]{1,2000}.[^"]{1,2000})"""
+      """"actions":\["({action}[^"]{1,2000})""""
+      """"recipients":\["({recipients}({recipient}[^"@]{1,2000}@[^\."]{1,2000}.[^"]{1,2000})[^\]]{0,2000})\]"""
    ]
  
 

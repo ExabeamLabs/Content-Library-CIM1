@@ -13,10 +13,15 @@ Name = json-sentinelone-singularityp-process-created-1
     """"src.process.parent.image.path":"{1,100}\s{0,100}({parent_process}({parent_process_directory}[^@]+?)[\\\/]{0,2000}({parent_process_name}[^"\\\/]{1,2000}))"""",
     """process.image.path":"({process_path}({process_directory}(:?[\w:]{1,2000})?[^"]{0,2000}\\)({process_name}[^"]{1,2000}))"""",
     """"src.process.image.path":"({process_path}({process_directory}(:?[\w:]{1,2000})?[^"]{0,2000}\\)({process_name}[^"]{1,2000}))"""",
+    """"tgt.process.image.path":"({target_process}({target_directory}(:?[\w:]{1,2000})?[^"]{0,2000}\\)({target_process_name}[^"]{1,2000}))"""",
     """"src.process.pid":({pid}\d{1,100})""",
     """process.cmdline":"[\\"]{0,100}({command_line}.{1,2000}?)",""",
     """"src.process.cmdline":"({command_line}.{1,2000}?)",""",
     """"src.process.parent.cmdline":"({parent_command_line}.{1,2000}?)","""
+    """"tgt.process.publisher":"({dest_process_publisher}[^"]{1,2000})""""
+    """"src.process.publisher":"({process_publisher}[^"]{1,2000})""""
+    """"src.process.parent.publisher":"({parent_process_publisher}[^"]{1,2000})""""
+    """"agent.version":"({user_agent}[^"]{1,2000})""""
   ]
   DupFields = [ "host->dest_host" ]
 

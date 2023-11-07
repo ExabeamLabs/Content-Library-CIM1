@@ -24,7 +24,8 @@ Name = symantec-cloud-dlp-alert
     """"severity":"({alert_severity}[^"]{1,2000})"""",
     """"object_type":"({object_type}[^"]{1,2000})"""",
     """"object_name":"(|\/|({object}({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000}\\\/)?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}[^"]{1,2000}))?)?))))"""",
-    """"name":"(|\/|({object}({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000}\\\/)?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}[^"]{1,2000}))?)?))))""""
+    """"name":"(|\/|({object}({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000}\\\/)?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}[^"]{1,2000}))?)?))))"""",
+    """\ssrc=({src_ip}[A-Fa-f\d:\.]{1,2000})\s\w+""",
     """"host(s)?":"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
   ]
   DupFields = ["file_path->resource"]

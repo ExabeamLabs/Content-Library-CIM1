@@ -11,7 +11,7 @@ Name = s-crowdstrike-security-alert-1
   Fields = [
     """"eventCreationTime":\s{0,100}({time}\d{1,100})""",
 	""""ComputerName":\s{0,100}"({src_host}[\w\-\.]{1,2000})""",
-	""""UserName":\s{0,100}(({user_email}[^\@<,]{1,2000}\@[^\.<,]{1,2000}\.[^<,]{1,2000})|({user}[^<,]))"""
+	""""UserName":\s{0,100}"{0,100}(({user_email}[^\@<",]{1,2000}\@[^\.<",]{1,2000}\.[^<,"]{1,2000})|({user}[^<",]{1,2000}))"""
 	""""DetectId":\s{0,100}"({alert_id}[^"]{1,2000})""",
 	""""DetectName":\s{0,100}"({alert_type}[^"]{1,2000})""",
 	""""DetectDescription":\s{0,100}"\s{0,100}({detect_description}[^"]{1,2000}?)\s{0,100}"""",

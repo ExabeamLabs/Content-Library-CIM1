@@ -23,7 +23,8 @@ Name = symantec-cloud-activity
     """"message":"({additional_info}[^"]{1,2000})"""",
     """"severity":"({alert_severity}[^"]{1,2000})"""",
     """"object_type":"({object_type}[^"]{1,2000})"""",
-    """"object_name":"(|\/|({object}({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000}\\\/)?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}[^"]{1,2000}))?)?))))""""
+    """fname=({object}[^=]{1,2000}?)\s\w+=""",
+    """"object_name":"(|\/|({object}({file_path}(({file_parent}[^"]{0,2000}?)[\\\/]{1,20})?(|({file_name}[^"\\\/]{0,2000}?(\.({file_ext}[^"\.]{0,2000}))?)))))"""",
     """"name":"(|\/|({object}({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000}\\\/)?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}[^"]{1,2000}))?)?))))""""
     """"host(s)?":"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
     """"shared_with":"({target}[^"]{1,2000})""""

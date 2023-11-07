@@ -6,7 +6,7 @@ Name = json-azure-ad-security-alert-2
   Product = Azure AD Identity Protection
   Lms = Splunk
   DataType = "alert"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """"category":""", """"Exfiltration"""", """"title":""", """"detectionSource"""", """"microsoftDataLossPrevention"""", """"severity":""" ]
   Fields = [
     """"id":\s{0,100}"({alert_id}[^"]{1,2000})"""",
@@ -14,7 +14,7 @@ Name = json-azure-ad-security-alert-2
     """"severity":\s{0,100}"({alert_severity}[^"]{1,2000})"""",
     """"category":\s{0,100}"({alert_type}[^"]{1,2000})"""",
     """"description":\s{0,100}"({additional_info}[^"]{1,2000})"""",
-    """"createdDateTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,6}Z)"""",
+    """"createdDateTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
     """"accountName":\s{0,100}"(({user_fullname}[^"\s]{1,2000}\s[^"]{1,2000})|({user}[^"]{1,2000}))"""",
     """"userPrincipalName":\s{0,100}"(-|({user_email}[^@"]{1,2000}@[^".]{1,2000}\.[^"]{1,2000})|(({user}[^\s"@]{1,2000})(@[^"]{1,2000})?))"""",
     """"domainName"{1,20}:\s{0,100}"{1,20}({domain}[^"]{1,2000})"""",

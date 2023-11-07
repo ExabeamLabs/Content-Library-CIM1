@@ -6,7 +6,8 @@ Name = json-okta-security-alert
   Conditions = [ """"security.threat.detected"""", """destinationServiceName =Okta"""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
     """"severity"{1,20}:"{1,20}({alert_severity}[^",]{1,2000})""",
-    """({alert_type}application-action)"""
+    """({alert_type}application-action)""",
+    """"eventType":"({activity}[^"]{1,2000})""""
   ]
   DupFields = [ "event_name->alert_name" ]
 
@@ -39,6 +40,7 @@ json-okta-auth = {
     """requestUri":\s{0,100}"({request_uri}[^"]{1,2000}?)\s{0,100}"""",
     """"outcome":[^\]]{0,2000}?"result"\s{0,100}:\s{0,100}"({outcome}[^"]{1,2000})"""",
     """outcome":[^\]]{0,2000}?"result":"?(null|({outcome_result_at}[^\"]{1,2000}))"?,"reason":"?(null|({outcome_reason_at}[^"]{1,2000}))""",
+    """"dtHash":"({sha256}[^"]{1,2000})""""
   ]
   DupFields = ["domain->email_domain", "failure_reason->additional_info"
 }
